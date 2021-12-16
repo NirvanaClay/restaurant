@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "reset";
+@import "home";
+@import "nav";
+@import "auth";
+@import "pages/menu";
+@import "pages/category";
+@import "pages/order";
+@import "pages/dashboard";
+@import "pages/giftcards";
+@import "pages/final";
+
+$orange: #ff6600;
+$red: #ff0000;
+$light-blue: #0971ce;
+
+
+#app-layout {
+  height: 100%;
+  max-width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #f5f5f5;
+  z-index: -1;
+}

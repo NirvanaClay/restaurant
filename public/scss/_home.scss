@@ -1,0 +1,407 @@
+$orange: #ff6600;
+$red: #ff0000;
+$light-grey: #bebebe;
+
+#landing {
+  font-family: 'Source Sans Pro', sans-serif;
+  .welcome-jumbo {
+    height: 525px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('/img/food.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 75px;
+    .landing__header{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      text-transform: uppercase;
+      h1{
+        font-size: 5rem;
+        font-weight: 900;
+        color: white;
+      }
+      h2{
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: white;
+      }
+      button{
+        width: 200px;
+        height: 65px;
+        display: block;
+        margin: 20px auto;
+        font-size: 1.5rem;
+        font-weight: 600;
+        background: $red;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .landing-favorites{
+    width: 90%;
+    margin: 0 auto;
+    h2{
+      text-align: center;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-top: 30px;
+    }
+    .favs-container{
+      display: flex;
+      width: 900px;
+      margin: 0 auto;
+      height: 500px;
+      overflow: hidden;
+      .fav-slider{
+        width: 900px;
+        margin: 0 auto;
+        height: 450px;
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        transition: .5s ease-in-out;
+        font-size: 0;
+        .user-favs{
+          width: 225px;
+          height: 500px;
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          font-size: 1rem;
+          border: 1px solid $light-grey;
+          h3{
+            width: 225px;
+            height: 225px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 900;
+            color: $orange;
+          }
+          .fav-content{
+            height: 275px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 10px;
+            h4{
+              font-size: 1.5rem;
+            }
+            p{
+              font-size: 1.2rem;
+            }
+            button{
+              height: 40px;
+              width: 150px;
+              display: block;
+              margin: 0 auto;
+              border: none;
+              border-radius: 5px;
+              background: $red;
+              font-size: 1.2rem;
+              font-weight: 600
+            }
+          }
+        }
+        .my-favs{
+          height: 500px;
+          width: 225px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          cursor: pointer;
+          font-size: 1rem;
+          border: 1px solid $light-grey;
+          img{
+            width: 225px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+          }
+          .fav-content{
+            height: 275px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 10px;
+            h4{
+              font-size: 1.5rem;
+            }
+            p{
+              font-size: 1.2rem;
+            }
+            button{
+              height: 40px;
+              width: 150px;
+              display: block;
+              margin: 0 auto;
+              border: none;
+              border-radius: 5px;
+              background: $red;
+              font-size: 1.2rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    .nav-circles{
+      display: flex;
+      margin-top: 20px;
+      justify-content: center;
+      .circle-1{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: $red;
+        cursor: pointer;
+      } 
+      .circle-2{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: $light-grey;
+        cursor: pointer;
+      }
+      .circle-3{
+        width: 20px;
+        height: 20px;
+        display: none;
+        border-radius: 50%;
+        background: $light-grey;
+        cursor: pointer;
+      }
+      .circle-4{
+        width: 20px;
+        height: 20px;
+        display: none;
+        border-radius: 50%;
+        background: $light-grey;
+        cursor: pointer;
+      }
+    }
+  }
+  .rewards-pitch{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('/img/rewards-1.png');
+    background-size: cover;
+    background-position: center;
+    .rewards-description{
+      color: white;
+      height: 100%;
+      width: 90%;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      h2{
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 700;
+      }
+      p{
+        width: 75%;
+        margin: 0 auto;
+        font-size: 2rem;
+      }
+      a{
+        margin: 0 auto;
+        button{
+          height: 50px;
+          width: 150px;
+          margin: 0 auto;
+          border: none;
+          border-radius: 5px;
+          background: $red;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  #landing{
+    .landing-favorites{
+      .favs-container{
+        width: 600px;
+        .fav-slider{
+          height: 550px;
+          width: 600px;
+          .user-favs{
+            width: 200px;
+            height: 500px;
+            h3{
+              width: 200px;
+              font-size: 2.5rem;
+              margin: auto;
+            }
+            .fav-content{
+              height: 275px;
+              width: 200px;
+            }
+          }
+          .my-favs{
+            width: 200px;
+            img{
+              width: 200px;
+              height: auto;
+            }
+            .fav-content{
+              height: 325px;
+            }
+          }
+        }
+      }
+      .nav-circles{
+        .circle-3{
+          display: flex;
+        }
+      }
+    }
+    .rewards-pitch{
+      .rewards-description{
+        h2{
+          font-size: 2.5rem;
+        }
+        p{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 576px){
+  #landing{
+    .landing-favorites{
+      .favs-container{
+        width: 300px;
+        .fav-slider{
+          width: 300px;
+          .user-favs{
+            height: 500px;
+            width: 150px;
+            h3{
+              height: 145px;
+              width: 150px;
+              font-size: 2rem;
+            }
+            .fav-content{
+              width: 150px;
+              height: 350px;
+              button{
+                width: 100px;
+              }
+            }
+          }
+          .my-favs{
+            height: 500px;
+            width: 150px;
+            img{
+              width: 145px;
+              height: auto;
+            }
+            .fav-content{
+              width: 150px;
+              height: 350px;
+              button{
+                width: 100px;
+              }
+            }
+          }
+        }
+      }
+      .nav-circles{
+        .circle-3{
+          display: flex;
+        }
+        .circle-4{
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 320px){
+  #landing{
+    .welcome-jumbo{
+      padding: 10px;
+      .landing__header{
+        h1{
+          font-size: 4.5rem;
+        }
+        button{
+          width: 150px;
+          height: 50px;
+        }
+      }
+    }
+    .landing-favorites{
+      .favs-container{
+        width: 200px;
+        .fav-slider{
+          width: 200px;
+          .user-favs{
+            width: 200px;
+            h3{
+              font-size: 3rem;
+              width: 200px;
+            }
+            .fav-content{
+              width: 200px;
+              button{
+                width: 80px;
+              }
+            }
+          }
+          .my-favs{
+            height: 500px;
+            width: 200px;
+            img{
+              width: 195px;
+              height: auto;
+            }
+            .fav-content{
+              width: 200px;
+              height: 350px;
+              button{
+                width: 100px;
+              }
+            }
+          }
+        }
+      }
+      .nav-circles{
+        .circle-3{
+          display: flex;
+        }
+        .circle-4{
+          display: flex;
+        }
+      }
+    }
+    .rewards-pitch{
+      .rewards-description{
+        h2{
+          font-size: 2rem;
+        }
+        p{
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

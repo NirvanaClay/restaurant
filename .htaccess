@@ -4,6 +4,7 @@
     </IfModule>
 
     RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -17,5 +18,5 @@
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ public/$1 [L]
+    RewriteRule ^ index.php [L]
 </IfModule>

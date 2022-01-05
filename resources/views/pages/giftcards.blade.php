@@ -4,7 +4,6 @@
 
 @section('content')
   <main id='giftcards'>
-    {{-- <img src='/img/giftcards-bg.jpg' class='bg'> --}}
     <h1>Make Things Easy</h1>
     <h2>Get Your Giftcard Today</h2>
     <div class='card-details'>

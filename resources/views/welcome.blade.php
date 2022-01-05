@@ -32,7 +32,7 @@
             <div class='favs-container mt-4'>
                 <ul class='fav-slider'>
                     <li class='my-favs'>
-                        <img src='/img/burger-2.png'> 
+                        <img src='{{ asset('/img/burger-2.png') }}'> 
                         <div class='fav-content'>              
                             <h4>Mushroom Swiss Burger</h4>
                             <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>
@@ -40,7 +40,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='/img/pasta-1.jpg'>
+                        <img src='{{ asset('/img/pasta-1.jpg') }}'> 
                         <div class='fav-content'>
                             <h4>Chicken Alfredo</h4>
                             <p>Fettucini pasta covered in delicious alfredo sauce and sautéed shrimp.</p>
@@ -48,7 +48,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='/img/steak-1.jpg'>
+                        <img src='{{ asset('/img/steak-1.jpg') }}'>
                         <div class='fav-content'>
                             <h4>Ribeye Steak</h4>
                             <p>Thick-cut steak topped with garlic butter.</p>

@@ -6,6 +6,8 @@ use Illuminate\Support\ServiceProvider;
 
 use Illuminate\Support\Facades\Schema;
 
+use Illuminate\Support\Facades\URL;
+
 use Illuminate\Http\Request;
 
 class AppServiceProvider extends ServiceProvider
@@ -27,6 +29,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(Request $request)
     {
-        //
+        if(config('app.env') === 'production') {
+            URL::forceScheme('https');
+        }
     }
 }

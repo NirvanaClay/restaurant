@@ -13,7 +13,7 @@
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="{{ secure_asset('scss/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('scss/app.css') }}">
       
     </head>
     <body class="antialiased">
@@ -32,8 +32,8 @@
       </section>
 
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="{{ secure_asset('js/slider.js') }}"></script>
-        <script src="{{ secure_asset('js/nav.js') }}"></script>
-        <script src="{{ secure_asset('js/cart.js') }}"></script>
+        <script src="{{ asset('js/slider.js') }}"></script>
+        <script src="{{ asset('js/nav.js') }}"></script>
+        <script src="{{ asset('js/cart.js') }}"></script>
     </body>
 </html>

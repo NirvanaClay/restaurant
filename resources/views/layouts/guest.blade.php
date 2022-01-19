@@ -13,10 +13,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="{{ asset('scss/app.css') }}"> 
+        <link rel="stylesheet" href="{{ secure_asset('scss/app.css') }}"> 
 
         <!-- Scripts -->
-        {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+        {{-- <script src="{{ secure_asset('js/app.js') }}" defer></script> --}}
     </head>
     <body>
         @include('includes.top-menu')
@@ -24,9 +24,9 @@
             {{ $slot }}
         </div>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="{{ asset('js/scripts.js') }}"></script>
-        <script src="{{ asset('js/giftcards.js') }}"></script>
-        <script src="{{ asset('js/cart.js') }}"></script>
-        <script src="{{ asset('js/favorites.js') }}"></script>
+        <script src="{{ secure_asset('js/scripts.js') }}"></script>
+        <script src="{{ secure_asset('js/giftcards.js') }}"></script>
+        <script src="{{ secure_asset('js/cart.js') }}"></script>
+        <script src="{{ secure_asset('js/favorites.js') }}"></script>
     </body>
 </html>

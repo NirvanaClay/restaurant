@@ -32,8 +32,8 @@
       </section>
 
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="{{ asset('js/slider.js') }}"></script>
-        <script src="{{ asset('js/nav.js') }}"></script>
-        <script src="{{ asset('js/cart.js') }}"></script>
+        <script src="{{ secure_asset('js/slider.js') }}"></script>
+        <script src="{{ secure_asset('js/nav.js') }}"></script>
+        <script src="{{ secure_asset('js/cart.js') }}"></script>
     </body>
 </html>

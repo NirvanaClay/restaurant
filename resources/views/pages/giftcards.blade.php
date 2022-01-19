@@ -24,6 +24,6 @@
     </div>
     <button type='submit' class='add' form='addGift'>Add To Cart</button>
   </main>
-  <script src="{{ asset('js/giftcards.js') }}"></script>
+  <script src="{{ secure_asset('js/giftcards.js') }}"></script>
 
 @endsection

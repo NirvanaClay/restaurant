@@ -1,5 +1,5 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^example.com$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.example.com$
-RewriteCond %{REQUEST_URI} !project/public/
-RewriteRule (.*) /project/public/$1 [L]
+# Redirect all requests to public folder
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

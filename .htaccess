@@ -1,8 +1,8 @@
-<ifmodule mod_rewrite.c>
+<Ifmodule mod_rewrite.c>
  
-    <ifmodule mod_negotiation.c>
+    <Ifmodule mod_negotiation.c>
         Options -MultiViews
-    </ifmodule>
+    </Ifmodule>
      
     RewriteEngine On
      
@@ -17,4 +17,4 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ server.php
  
-</ifmodule>
+</Ifmodule>

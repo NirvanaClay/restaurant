@@ -1,7 +1,13 @@
-RewriteEngine On
-RewriteBase /My-Project/
+<IfModule mod_rewrite.c>
+  <IfModule mod_negotiation.c>
+      Options -MultiViews +Indexes
+  </IfModule>
 
-RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
-RewriteRule ^ %1 [L,NE,R=302]
+  RewriteEngine On
+  RewriteBase /My-Project/
 
-RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+  RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+  RewriteRule ^ %1 [L,NE,R=302]
+
+  RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+</IfModule>

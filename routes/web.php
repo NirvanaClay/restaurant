@@ -65,7 +65,7 @@ Route::get('/categories/{category}', function ($id, Request $request) {
     $items = $category->items;
     // $cartItems = Cartitem::all();
     // foreach($cartItems as $cartItem){
-    //     $cartItem->delete();sdfasdf
+    //     $cartItem->delete();
     // }
     // return view('categories/show', [
     //     'category' => $category, 'items' => $items, 'cartItems' => $cartItems, 'totalNum' => $totalNum]);

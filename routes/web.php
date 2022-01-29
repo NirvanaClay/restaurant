@@ -146,12 +146,14 @@ Route::get('/dashboard', function () {
     if($user){
         $favorites = $user->favorites;
     }
-    if($user){
+    if($user && $user->rewards){
         $rewards = $user->rewards;
     }
     $totalRewards = 0;
-    foreach($rewards as $reward){
-        $totalRewards += $reward->amount;
+    if($rewards){
+        foreach($rewards as $reward){
+            $totalRewards += $reward->amount;
+        }
     }
     return view('dashboard', ['favorites' => $favorites, 'user' => $user, 'rewards' => $rewards, 'totalRewards' => $totalRewards]);
 })->middleware(['auth'])->name('dashboard');

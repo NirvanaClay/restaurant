@@ -101,7 +101,11 @@ table {
   color: white;
 }
 
-#landing .welcome-jumbo .landing__header button {
+#landing .welcome-jumbo .landing__header a {
+  text-decoration: none;
+}
+
+#landing .welcome-jumbo .landing__header a button {
   width: 200px;
   height: 65px;
   display: block;

@@ -23,7 +23,7 @@
           <div class='landing__header'>
             <h1>Guy's Eats</h1>
             <h2>Tasty Food To Fill You Up</h2>
-            <button>Order Now</button>
+            <a href='{{ route('categories') }}'><button>Order Now</button></a>
           </div>
         </div>
 

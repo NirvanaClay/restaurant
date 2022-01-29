@@ -30,17 +30,20 @@ $light-grey: #bebebe;
         font-weight: 900;
         color: white;
       }
-      button{
-        width: 200px;
-        height: 65px;
-        display: block;
-        margin: 20px auto;
-        font-size: 1.5rem;
-        font-weight: 600;
-        background: $red;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.5rem;
+      a{
+        text-decoration: none;
+        button{
+          width: 200px;
+          height: 65px;
+          display: block;
+          margin: 20px auto;
+          font-size: 1.5rem;
+          font-weight: 600;
+          background: $red;
+          border: none;
+          border-radius: 5px;
+          font-size: 1.5rem;
+        }
       }
     }
   }

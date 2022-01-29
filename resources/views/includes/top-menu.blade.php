@@ -5,7 +5,7 @@
   <div class='menu'>
     <ul class='links'>
       <li>
-        <a href='{{ route('rewards') }}'>Rewards</a>
+        <a href='/dashboard'>Rewards</a>
       </li>
       <li>
         <a href='{{ route('categories') }}'>Menu</a>

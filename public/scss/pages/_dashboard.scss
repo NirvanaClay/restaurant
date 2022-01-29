@@ -4,7 +4,7 @@ $light-blue: #0971ce;
 
 #dashboard{
   max-width: 100%;
-  min-height: 100%;
+  min-height: calc(100vh - 125px);
   margin: 0 auto;
   h2{
     font-size: 3rem;

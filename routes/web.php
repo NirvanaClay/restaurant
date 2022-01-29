@@ -35,6 +35,10 @@ Route::get('/', function (Request $request) {
     $categories = Category::all();
     $id = Auth::id();
     $user = User::find($id);
+    Schema::table('rewards', function (Blueprint $table) {
+        $table->integer('user_id');
+    });
+    
     // Session::flush();
     return view('welcome', ['categories' => $categories, 'user' => $user]);
 });

@@ -5,13 +5,13 @@
   <div class='menu'>
     <ul class='links'>
       <li>
-        <a href='/dashboard'>Rewards</a>
+        <a href='{{ route('rewards') }}'>Rewards</a>
       </li>
       <li>
-        <a href='/categories'>Menu</a>
+        <a href='{{ route('categories') }}'>Menu</a>
       </li>
       <li>
-        <a href='/giftcards'>Gift Cards</a>
+        <a href='{{ route('giftcards') }}'>Gift Cards</a>
       </li>
       <li>
         @if(Auth::user())

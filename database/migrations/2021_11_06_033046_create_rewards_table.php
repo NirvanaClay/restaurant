@@ -16,6 +16,7 @@ class CreateRewardsTable extends Migration
         Schema::create('rewards', function (Blueprint $table) {
             $table->integer('amount');
             $table->id();
+            $table->integer('user_id');
             $table->string('code', 16)->unique();
         });
     }

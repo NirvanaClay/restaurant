@@ -90,7 +90,7 @@ Route::delete('/order/{cartItem}', 'App\Http\Controllers\ItemController@destroy'
 
 Route::put('/orderNum/{cartItem}', 'App\Http\Controllers\ItemController@edit');
 
-Route::get('/giftcards', 'App\Http\Controllers\GiftcardController@show');
+Route::get('/giftcards', 'App\Http\Controllers\GiftcardController@show')->name('giftcards');
 
 Route::post('/giftcards', 'App\Http\Controllers\GiftcardController@add');
 

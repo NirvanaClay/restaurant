@@ -30,6 +30,7 @@ use Illuminate\Http\Request;
 */
 
 Route::redirect('/public', '/');
+Route::redirect('/index.php', '/');
 
 Route::get('/', function (Request $request) {
     $categories = Category::all();

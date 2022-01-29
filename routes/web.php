@@ -29,6 +29,8 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::redirect('/public', '/');
+
 Route::get('/', function (Request $request) {
     $categories = Category::all();
     $id = Auth::id();

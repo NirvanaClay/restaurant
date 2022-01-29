@@ -7,6 +7,9 @@
 <section id='menu'>
   @if(Auth::user())
     <h1>My Favorites</h1>
+    @if($user->favorites < 1)
+      <p class='add-favs'>Add favorite items for easy ordering</p>
+    @endif
     <section class='fluid-container'>
       <div class='fav-container row'>
         @foreach ($user->favorites as $favorite)

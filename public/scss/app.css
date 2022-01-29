@@ -980,6 +980,11 @@ table {
   color: #ff0000;
 }
 
+#menu .add-favs {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
 #menu .fav-container {
   width: 90%;
   margin: 0 auto;

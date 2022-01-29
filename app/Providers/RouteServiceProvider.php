@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/dashboard';
+    public const HOME = 'https://www.restaurant18.herokuapp.com/dashboard';
 
     /**
      * The controller namespace for the application.

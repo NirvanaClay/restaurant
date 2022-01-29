@@ -128,7 +128,10 @@
       <p class='subtotal'>0.00</p>  
     </div>
     @if(count($drinks) > 0)
-      <p class='savings'>You saved {{$drinks[0]['price']}} on a free drink with your Rewards account today!</p>
+      @if(Auth::user())
+        <p class='savings'>You saved {{$drinks[0]['price']}} on a free drink with your Rewards account today!</p>
+      @else
+        <p class='savings'>Register now and save {{$drinks[0]['price']}} with a free drink today!</p>
     @endif
     <div class='tax'>
       <p>Tax</p>

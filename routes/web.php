@@ -37,7 +37,7 @@ Route::get('/', function (Request $request) {
     $user = User::find($id);
     // Session::flush();
     return view('welcome', ['categories' => $categories, 'user' => $user]);
-});
+})->name('home');
 
 Route::get('/categories', function(Request $request) {
     $user = Auth::user();

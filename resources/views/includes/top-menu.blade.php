@@ -1,6 +1,6 @@
 <div id='top-menu'>
   <div class='logo'>
-    <a href="/"><img src='/img/logo2.png'></a>
+    <a href="{{ route('home') }}"><img src='/img/logo2.png'></a>
   </div>
   <div class='menu'>
     <ul class='links'>

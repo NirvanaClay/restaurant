@@ -42,36 +42,13 @@ Route::get('/', function (Request $request) {
 
 Route::get('/categories', function(Request $request) {
     $user = Auth::user();
-    // $category = new Category([
-    //     'name' => 'Alcohol',
-    //     'image_url' => '/img/alcohol.jpg',
-    //     'description' => 'Drink, drank, drunk.'
-    // ]);
-    // $category->save();
     $categories = Category::all();
-    // return view('categories/index', ['categories' => $categories, 'user' => $user, 'totalNum' => $totalNum]);
     return view('categories/index', ['categories' => $categories, 'user' => $user]);
 })->name('categories');
 
 Route::get('/categories/{category}', function ($id, Request $request) {
     $category = Category::find($id);
-    // foreach($category->items as $item){
-    //     $item->delete();
-    // }
-    // $newItem = new Item([
-    //     'name' => 'Water',
-    //     'image_url' => '/img/beverage-6.jpg',
-    //     'category_id' => '$category->id',
-    //     'price' => '0.00'
-    // ]);
-    // $category->items()->save($newItem);
     $items = $category->items;
-    // $cartItems = Cartitem::all();
-    // foreach($cartItems as $cartItem){
-    //     $cartItem->delete();
-    // }
-    // return view('categories/show', [
-    //     'category' => $category, 'items' => $items, 'cartItems' => $cartItems, 'totalNum' => $totalNum]);
     return view('categories/show', ['category' => $category, 'items' => $items]);
 });
 

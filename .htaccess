@@ -3,11 +3,14 @@
       Options -MultiViews +Indexes
   </IfModule>
 
-  RewriteEngine On
-  RewriteBase /
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ ^$1 [N]
 
-  RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
-  RewriteRule ^ %1 [L,NE,R=302]
+RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
+RewriteRule ^(.*)$ public/$1 
 
-  RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ server.php
 </IfModule>

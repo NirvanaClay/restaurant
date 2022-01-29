@@ -5,7 +5,7 @@
   <div class='menu'>
     <ul class='links'>
       <li>
-        <a href='/dashboard'>Rewards</a>
+        <a href='{{ route('dashboard') }}'>Rewards</a>
       </li>
       <li>
         <a href='{{ route('categories') }}'>Menu</a>
@@ -20,7 +20,7 @@
             <input type='submit' value='Log Out'>
           </form>
         @else
-          <a href='/login'>Log In</a>
+          <a href='{{ route('dashboard') }}'>Log In</a>
         @endif
       </li>
     </ul>

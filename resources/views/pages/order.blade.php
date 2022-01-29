@@ -131,7 +131,7 @@
       @if(Auth::user())
         <p class='savings'>You saved {{$drinks[0]['price']}} on a free drink with your Rewards account today!</p>
       @else
-        <p class='savings'>Register now and save {{$drinks[0]['price']}} with a free drink today!</p>
+        <p class='savings'><a href='{{ route('dashboard') }}'>Register</a> now and get a free drink today!</p>
       @endif
     @endif
     <div class='tax'>

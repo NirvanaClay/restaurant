@@ -50,7 +50,7 @@ Route::get('/categories', function(Request $request) {
     $categories = Category::all();
     // return view('categories/index', ['categories' => $categories, 'user' => $user, 'totalNum' => $totalNum]);
     return view('categories/index', ['categories' => $categories, 'user' => $user]);
-});
+})->name('categories');
 
 Route::get('/categories/{category}', function ($id, Request $request) {
     $category = Category::find($id);

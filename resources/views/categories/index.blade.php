@@ -8,7 +8,7 @@
   @if(Auth::user())
     <h1>My Favorites</h1>
     @if(count($user->favorites) < 1)
-      <p class='add-favs'>Add favorite items for easy ordering</p>
+      <p class='addFavs-pitch'>Add favorite items for easy ordering</p>
     @endif
     <section class='fluid-container'>
       <div class='fav-container row'>

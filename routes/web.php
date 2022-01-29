@@ -30,6 +30,7 @@ use Illuminate\Http\Request;
 */
 
 Route::redirect('/public', '/');
+Route::redirect('http://www.restaurant18.herokuapp.com', 'https://www.restaurant18.herokuapp.com');
 
 Route::get('/', function (Request $request) {
     $categories = Category::all();

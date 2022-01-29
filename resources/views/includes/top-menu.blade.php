@@ -8,7 +8,7 @@
         <a href='/dashboard'>Rewards</a>
       </li>
       <li>
-        <a href='{{ route('categories') }}'>Menu</a>
+        <a href='/categories'>Menu</a>
       </li>
       <li>
         <a href='/giftcards'>Gift Cards</a>

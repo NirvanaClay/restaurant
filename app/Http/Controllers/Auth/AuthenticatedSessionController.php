@@ -111,7 +111,7 @@ class AuthenticatedSessionController extends Controller
                     $reward->save();
                     $user->save();
                 }
-                $code = NULL;
+                $code = '';
             }
         }
         $request->validate([

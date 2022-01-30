@@ -1120,6 +1120,9 @@ table {
   #menu .fav-container {
     padding: 5px;
   }
+  #menu .fav-container .favorite {
+    width: 100%;
+  }
   #menu .fav-container .favorite img {
     width: 150px;
     height: 150px;
@@ -1138,7 +1141,7 @@ table {
   }
 }
 
-@media (max-width: 37px) {
+@media (max-width: 370px) {
   #menu .fav-container .favorite {
     padding: 0 5px;
   }

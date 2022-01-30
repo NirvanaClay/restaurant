@@ -6,6 +6,7 @@ $light-blue: #0971ce;
   max-width: 100%;
   min-height: calc(100vh - 125px);
   margin: 0 auto;
+  padding-top: 30px;
   h2{
     font-size: 3rem;
     font-weight: 700;
@@ -141,6 +142,7 @@ $light-blue: #0971ce;
 
 @media(max-width: 992px){
   #dashboard{
+    padding-bottom: 30px;
     .fav-container{
       grid-template-columns: 33.33% 33.33% 1fr;
     }

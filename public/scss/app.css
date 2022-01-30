@@ -208,6 +208,10 @@ table {
   font-size: 1.2rem;
 }
 
+#landing .landing-favorites .favs-container .fav-slider .user-favs .fav-content a {
+  text-decoration: none;
+}
+
 #landing .landing-favorites .favs-container .fav-slider .user-favs .fav-content button {
   height: 40px;
   width: 150px;
@@ -1686,6 +1690,7 @@ table {
   max-width: 100%;
   min-height: calc(100vh - 125px);
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 #dashboard h2 {
@@ -1877,6 +1882,9 @@ table {
 }
 
 @media (max-width: 992px) {
+  #dashboard {
+    padding-bottom: 30px;
+  }
   #dashboard .fav-container {
     -ms-grid-columns: 33.33% 33.33% 1fr;
         grid-template-columns: 33.33% 33.33% 1fr;

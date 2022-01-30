@@ -3,7 +3,7 @@
 @section('content')
 
 <main id='dashboard'>
-    <h2 class='mb-4'>Rewards</h2>
+    <h2 class='my-4'>Rewards</h2>
     <div class='rewards__container'>
       <div class='my-rewards'>
         <p>You have</p>

@@ -104,7 +104,7 @@
                         <div class='fav-content'>
                             <h4>Log In</h4>
                             <p><a href='/login'>Log In</a> to your Rewards account to see your favorites.</p>
-                            <button>Log In</button>
+                            <a href='{{ route('dashboard') }}'><button>Log In</button></a>
                         </div>
                     </li>
                     <li class='my-favs'>

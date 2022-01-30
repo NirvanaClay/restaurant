@@ -102,9 +102,6 @@ class AuthenticatedSessionController extends Controller
         if($newRewards > 0){
             for($i=0; $i < $newRewards; $i++){
                 array_push($newRewardsArray, $code);
-                // for($i=0; $i < 16; $i++){
-                //     $code .= mt_rand(0,9);
-                // }
             }
             foreach($newRewardsArray as $newReward){
                 for($i=0; $i < 16; $i++){
@@ -117,16 +114,7 @@ class AuthenticatedSessionController extends Controller
                 $reward->save();
                 $code = '';
             };
-                // for($i=0; $i < $newRewards; $i++){
-                    // $reward = new Reward([
-                    //     'code' => $code,
-                    //     'user_id' => Auth::id()
-                    // ]);
-                    // $reward->save();
-                    $user->save();
-                // }
-                // $code = '';
-            // }
+            $user->save();
         }
         $request->validate([
             'amount' => 'gt:1'

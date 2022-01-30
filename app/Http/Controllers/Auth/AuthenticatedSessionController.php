@@ -115,6 +115,7 @@ class AuthenticatedSessionController extends Controller
                     'user_id' => Auth::id()
                 ]);
                 $reward->save();
+                $code = '';
             };
                 // for($i=0; $i < $newRewards; $i++){
                     // $reward = new Reward([

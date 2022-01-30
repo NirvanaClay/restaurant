@@ -6,9 +6,6 @@
 
 <main id='checkout'>
   <h1>Thank You For Ordering!</h1>
-  @if(count($cardCodes) > 0)
-
-  @endif
   @if(count($cartCards) > 0 && count($cartItems) > 0)
     <p>Your food will be ready in 15-20 minutes, and your giftcard will be waiting for you.</p>
     @foreach($cartCards as $cartCard)
@@ -28,7 +25,7 @@
       </div>
     @endforeach
   @elseif(count($cartCards) < 1 && count($cartItems) > 0)
-  <p>Your food will be ready in 15-20 minutes. </p>
+    <p>Your food will be ready in 15-20 minutes. </p>
   @endif
 </main>
 

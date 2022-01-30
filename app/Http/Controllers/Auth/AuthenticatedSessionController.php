@@ -89,34 +89,47 @@ class AuthenticatedSessionController extends Controller
         ///Delete used rewards, add new rewards
         $rewardsUsed = $request->rewardsNum;
         $code = '';
-        $rewards = [];
+        $usedRewards = [];
+        $newRewardsArray = [];
         for($i=0; $i < $rewardsUsed; $i++){
             $reward = $request->input('reward'.($i+1));
-            array_push($rewards, $reward);
+            array_push($usedRewards, $reward);
         }
-        foreach($rewards as $reward){
+        foreach($usedRewards as $reward){
             $usedReward = Reward::find($reward);
             $usedReward->delete();
         }
         if($newRewards > 0){
             for($i=0; $i < $newRewards; $i++){
+                array_push($newRewardsArray, $code);
+                // for($i=0; $i < 16; $i++){
+                //     $code .= mt_rand(0,9);
+                // }
+            }
+            foreach($newRewardsArray as $newReward){
                 for($i=0; $i < 16; $i++){
                     $code .= mt_rand(0,9);
                 }
-                for($i=0; $i < $newRewards; $i++){
-                    $reward = new Reward([
-                        'code' => $code,
-                        'user_id' => Auth::id()
-                    ]);
-                    $reward->save();
+                $reward = new Reward([
+                    'code' => $code,
+                    'user_id' => Auth::id()
+                ]);
+                $reward->save();
+            };
+                // for($i=0; $i < $newRewards; $i++){
+                    // $reward = new Reward([
+                    //     'code' => $code,
+                    //     'user_id' => Auth::id()
+                    // ]);
+                    // $reward->save();
                     $user->save();
-                }
-                $code = '';
-            }
+                // }
+                // $code = '';
+            // }
         }
         $request->validate([
             'amount' => 'gt:1'
         ]);
-        return view('pages/final', ['user' => $user, 'request' => $request, 'rewards' => $rewards, 'newRewards' => $newRewards]);
+        return view('pages/final', ['user' => $user, 'request' => $request, 'newRewards' => $newRewards]);
     }
 }

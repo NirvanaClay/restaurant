@@ -1131,6 +1131,9 @@ table {
     height: 250px;
     padding: 0 5px;
   }
+  #menu .fav-container .favorite .add-info .description {
+    display: none;
+  }
   #menu .categories {
     width: 100%;
     padding: 0;
@@ -1159,9 +1162,6 @@ table {
   #menu .fav-container .favorite .add-info {
     height: 75px;
     font-size: 1rem;
-  }
-  #menu .fav-container .favorite .add-info .description {
-    display: none;
   }
   #menu .fav-container .favorite .order {
     width: 100px;

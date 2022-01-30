@@ -130,6 +130,9 @@ $light-grey: #bebebe;
         .add-info{
           height: 250px;
           padding: 0 5px;
+          .description{
+            display: none;
+          }
         }
       }
     }
@@ -165,9 +168,9 @@ $light-grey: #bebebe;
         .add-info{
           height: 75px;
           font-size: 1rem;
-          .description{
-            display: none;
-          }
+          // .description{
+          //   display: none;
+          // }
         }
         .order{
           width: 100px;

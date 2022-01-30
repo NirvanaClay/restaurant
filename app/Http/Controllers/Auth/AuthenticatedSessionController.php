@@ -109,11 +109,11 @@ class AuthenticatedSessionController extends Controller
                         'user_id' => Auth::id()
                     ]);
                     $reward->save();
+                    $user->save();
                 }
                 $code = NULL;
             }
         }
-        $user->save();
         $request->validate([
             'amount' => 'gt:1'
         ]);

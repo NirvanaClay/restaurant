@@ -1117,9 +1117,6 @@ table {
 }
 
 @media (max-width: 576px) {
-  #menu .fav-container {
-    padding: 5px;
-  }
   #menu .fav-container .favorite img {
     width: 150px;
     height: 150px;
@@ -1984,7 +1981,7 @@ table {
     height: 80px;
   }
   #dashboard .fav-container .favorite .add-info {
-    height: 225px;
+    height: 250px;
   }
 }
 

@@ -110,6 +110,7 @@ class AuthenticatedSessionController extends Controller
                     ]);
                     $reward->save();
                 }
+                $code = null;
             }
         }
         $user->save();

@@ -1123,7 +1123,6 @@ table {
   }
   #menu .fav-container .favorite .add-info {
     height: 250px;
-    padding: 0 5px;
   }
   #menu .categories {
     width: 100%;
@@ -1136,9 +1135,6 @@ table {
 }
 
 @media (max-width: 320px) {
-  #menu .fav-container .favorite {
-    padding: 0 5px;
-  }
   #menu .fav-container .favorite img {
     width: 100%;
     height: auto;

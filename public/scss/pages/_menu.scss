@@ -120,7 +120,7 @@ $light-grey: #bebebe;
 @media(max-width: 576px){
   #menu{
     .fav-container{
-      // padding: 5px;
+      padding: 5px;
       .favorite{
         img{
           width: 150px;
@@ -128,7 +128,7 @@ $light-grey: #bebebe;
         }
         .add-info{
           height: 250px;
-          // padding: 0 5px;
+          padding: 0 5px;
         }
       }
     }
@@ -145,11 +145,11 @@ $light-grey: #bebebe;
   }
 }
 
-@media(max-width: 320px){
+@media(max-width: 37px){
   #menu{
     .fav-container{
       .favorite{
-        // padding: 0 5px;
+        padding: 0 5px;
         img{
           width: 100%;
           height: auto;
@@ -163,6 +163,7 @@ $light-grey: #bebebe;
         }
         .add-info{
           height: 75px;
+          font-size: 1rem;
           .description{
             display: none;
           }

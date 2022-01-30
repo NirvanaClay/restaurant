@@ -1117,12 +1117,16 @@ table {
 }
 
 @media (max-width: 576px) {
+  #menu .fav-container {
+    padding: 5px;
+  }
   #menu .fav-container .favorite img {
     width: 150px;
     height: 150px;
   }
   #menu .fav-container .favorite .add-info {
     height: 250px;
+    padding: 0 5px;
   }
   #menu .categories {
     width: 100%;
@@ -1134,7 +1138,10 @@ table {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 37px) {
+  #menu .fav-container .favorite {
+    padding: 0 5px;
+  }
   #menu .fav-container .favorite img {
     width: 100%;
     height: auto;
@@ -1148,6 +1155,7 @@ table {
   }
   #menu .fav-container .favorite .add-info {
     height: 75px;
+    font-size: 1rem;
   }
   #menu .fav-container .favorite .add-info .description {
     display: none;

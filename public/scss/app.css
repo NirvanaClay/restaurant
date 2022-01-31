@@ -2109,6 +2109,9 @@ table {
 }
 
 @media (max-width: 720px) {
+  #giftcards {
+    padding-bottom: 30px;
+  }
   #giftcards h1 {
     font-size: 3rem;
   }

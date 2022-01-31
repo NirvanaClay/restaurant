@@ -1128,7 +1128,7 @@ table {
     height: 150px;
   }
   #menu .fav-container .favorite .add-info {
-    height: 250px;
+    height: 225px;
     padding: 0 5px;
   }
   #menu .fav-container .favorite .add-info .description {
@@ -1961,12 +1961,12 @@ table {
   }
   #dashboard .fav-container .favorite .btn-container form .order {
     display: block;
-    width: 140px;
+    width: 100%;
     margin: 0 auto;
   }
   #dashboard .fav-container .favorite .btn-container form .remove {
     display: block;
-    width: 140px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -1976,7 +1976,7 @@ table {
     height: 80px;
   }
   #dashboard .fav-container .favorite .add-info {
-    height: 200px;
+    height: 225px;
   }
 }
 

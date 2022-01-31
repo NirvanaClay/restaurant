@@ -190,12 +190,14 @@ $light-blue: #0971ce;
             justify-content: center;
             .order{
               display: block;
-              width: 140px;
+              // width: 140px;
+              width: 100%;
               margin: 0 auto;
             }
             .remove{
               display: block;
-              width: 140px;
+              // width: 140px;
+              width: 100%;
               margin: 0 auto;
             }
           }
@@ -213,7 +215,7 @@ $light-blue: #0971ce;
           height: 80px;
         }
         .add-info{
-          height: 200px;
+          height: 225px;
         }
       }
     }

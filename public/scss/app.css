@@ -1131,6 +1131,9 @@ table {
     height: 250px;
     padding: 0 5px;
   }
+  #menu .fav-container .favorite .add-info .description {
+    font-size: 1.1rem;
+  }
   #menu .categories {
     width: 100%;
     padding: 0;
@@ -1141,7 +1144,7 @@ table {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 320px) {
   #menu .fav-container .favorite {
     padding: 0 5px;
   }

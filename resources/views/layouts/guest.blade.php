@@ -28,5 +28,6 @@
         <script src="{{ secure_asset('js/giftcards.js') }}"></script>
         <script src="{{ secure_asset('js/cart.js') }}"></script>
         <script src="{{ secure_asset('js/favorites.js') }}"></script>
+        <script src="{{ secure_asset('js/nav.js') }}"></script>
     </body>
 </html>

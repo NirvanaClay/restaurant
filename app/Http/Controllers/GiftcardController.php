@@ -72,13 +72,7 @@ class GiftcardController extends Controller
             'amount' => $giftcard->amount
         ];
         $request->session()->put('cartCard' . $id, $card);
-        // $all = Session::all();
-        // $cartItems = Cartitem::all();      
-        // $giftcards = Giftcard::all();
-    //     return redirect('order')->with(['cartItems' => $cartItems, 'cartCards' => $cartCards, 'totalNum' => $totalNum,
-    //     'highest' => $highest, 'cardID' => $giftcard->id
-    // ]);
-            return redirect('order');
+        return redirect('order');
     }
     public function destroy(Request $request)
     {
@@ -87,16 +81,6 @@ class GiftcardController extends Controller
         $giftcard = Giftcard::find($request->cardId);
         $giftcard->delete();
         $request->session()->forget('cartCard' . $id);
-        // $itemsPrice = 0;
-        // foreach($cartItems as $cartItem){
-        //     $itemsPrice +=($cartItem->price * $cartItem->quantity);
-        // }     
-        // $giftcards = Giftcard::all();
-        // $cardPrice = 0;
-        // foreach($giftcards as $giftcard){
-        //     $cardPrice +=($giftcard->amount);
-        // }
-        // $totalPrice = $itemsPrice + $cardPrice;
         return redirect('order');
     }
 }

@@ -1,3 +1,4 @@
+
 ///Check whether or not there are cart items and display icon accordingly
 const numContainer = document.querySelector('.num__container');
 const cartNum = document.querySelector('.num');

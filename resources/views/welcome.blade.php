@@ -32,7 +32,7 @@
             <div class='favs-container mt-4'>
                 <ul class='fav-slider'>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/burger-2.png') }}'> 
+                        <img src='{{ secure_asset('/img/burger-2.jpg') }}'> 
                         <div class='fav-content'>              
                             <h4>Mushroom Swiss Burger</h4>
                             <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>

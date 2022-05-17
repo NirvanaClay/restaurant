@@ -30,18 +30,8 @@ class ItemController extends Controller
      */
     public function index(Request $request)
     {
-        // $request->session()->flush();
-    // $category = new Category([
-    //     'name' => 'Alcohol',
-    //     'image_url' => '/img/alcohol.jpg',
-    //     'description' => 'Drink, drank, drunk.'
-    // ]);
-    // $category->save();
-    // Schema::table('items', function (Blueprint $table) {
-    //     $table->integer('quantity');
-    // });
-    $categories = Category::all();
-    return view('categories/index', ['categories' => $categories]);
+        $categories = Category::all();
+        return view('categories/index', ['categories' => $categories]);
     }
 
     /**
@@ -51,9 +41,6 @@ class ItemController extends Controller
      */
     public function favorites(Request $request)
     {
-        // $id = Auth::id();
-        // $user = User::find($id);
-        // $favorites = $user->favorites;
         Favorite::firstOrCreate(
             ['user_id' => $request->user_id, 'name' => $request->name],
             ['image_url' => $request->image_url,
@@ -62,15 +49,6 @@ class ItemController extends Controller
             'category' => $request->category,
             'fav_id' => $request->fav_id,]
         );
-        // $favorite = new Favorite([
-        //     'name' => $request->name,
-        //     'image_url' => $request->image_url,
-        //     'description' => $request->description,
-        //     'price' => $request->price,
-        //     'category' => $request->category,
-        //     'fav_id' => $request->fav_id,
-        //     'user_id' => $request->user_id
-        // ]);
     } 
 
     public function updateCart()

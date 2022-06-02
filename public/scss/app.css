@@ -380,6 +380,9 @@ table {
 }
 
 @media (max-width: 768px) {
+  #landing button {
+    color: white;
+  }
   #landing .landing-favorites .favs-container {
     width: 600px;
   }
@@ -2059,6 +2062,7 @@ table {
   border-radius: 5px;
   font-size: 1.2rem;
   background: #bebebe;
+  color: black;
 }
 
 #giftcards .card-details #addGift .active {

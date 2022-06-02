@@ -62,6 +62,10 @@ table {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+#landing button {
+  color: white;
+}
+
 #landing .welcome-jumbo {
   height: 525px;
   width: 100%;

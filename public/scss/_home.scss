@@ -239,6 +239,9 @@ $light-grey: #bebebe;
 
 @media(max-width: 768px){
   #landing{
+    button{
+      color: white;
+    }
     .landing-favorites{
       .favs-container{
         width: 600px;

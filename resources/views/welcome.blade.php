@@ -1,6 +1,6 @@
 @extends('layouts.landing')
 
-@section('title', 'Page Title')
+@section('title', "Guy's Restaurant")
 
 @section('content')
     <main id='landing'>

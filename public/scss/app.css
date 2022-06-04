@@ -1248,6 +1248,7 @@ table {
 
 #category #items .menu-item .add-info {
   height: 200px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1293,8 +1294,9 @@ table {
 }
 
 #category #items .menu-item .add-container .order {
-  width: 100%;
+  width: 90%;
   height: 50px;
+  margin: 0 auto;
   border: 0;
   border-radius: 5px;
   background: #ff0000;

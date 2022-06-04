@@ -37,7 +37,7 @@
                 </button>
               </form>
             @endif
-            <form method="POST" action="/items" class='addToCart col-9' name='cart-form'>
+            <form method="POST" action="/items" class='addToCart col-10' name='cart-form'>
               @csrf
               <input type ='hidden' name='name' value='{{$item->name}}' class='name'>
               <input type ='hidden' name='image_url' value='{{$item->image_url}}' class='image_url'>

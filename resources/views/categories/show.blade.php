@@ -23,7 +23,7 @@
           </div>
           <div class='add-container row'>
             @if(Auth::user())
-              <form method="POST" action="/favorites" class='addFav col-3' name='fav-form'>
+              <form method="POST" action="/favorites" class='addFav col-2' name='fav-form'>
                 @csrf
                 <input type ='hidden' name='name' value='{{$item->name}}' class='name'>
                 <input type ='hidden' name='image_url' value='{{$item->image_url}}' class='image_url'>

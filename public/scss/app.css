@@ -1275,6 +1275,9 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #category #items .menu-item .add-container .fav-icon {
@@ -1292,8 +1295,6 @@ table {
 #category #items .menu-item .add-container .order {
   width: 100%;
   height: 50px;
-  display: block;
-  margin: 0 auto;
   border: 0;
   border-radius: 5px;
   background: #ff0000;

@@ -708,6 +708,7 @@ table {
 .small-menu .links li input {
   margin: auto;
   border: none;
+  background: #f5f5f5;
   font-size: 1.3rem;
   color: black;
   font-weight: 700;

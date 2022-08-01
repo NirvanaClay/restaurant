@@ -1039,6 +1039,7 @@ table {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  padding-top: 5px;
 }
 
 #menu .fav-container .favorite .item-title h3 {

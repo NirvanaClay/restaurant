@@ -1004,6 +1004,7 @@ table {
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
+  margin: 0 auto;
 }
 
 #menu .fav-container .favorite {

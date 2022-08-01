@@ -1112,6 +1112,12 @@ table {
   margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  #menu .fav-container .favorite .add-info {
+    height: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   #menu .fav-container {
     -ms-grid-columns: 33.33% 33.33% 1fr;

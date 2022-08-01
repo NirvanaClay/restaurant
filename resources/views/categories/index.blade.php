@@ -10,10 +10,10 @@
     @if(count($user->favorites) < 1)
       <p class='addFavs-pitch'>Add favorite items for easy ordering</p>
     @endif
-    <section class='fluid-container'>
-      <div class='fav-container row'>
+    <section>
+      <div class='fav-container'>
         @foreach ($user->favorites as $favorite)
-          <article class='favorite col-6 col-lg-4 col-xl-3'>
+          <article class='favorite'>
             <img src="{{$favorite->image_url}}">
             <div class='item-title'>
               <h3>{{$favorite->name}}</h3>
@@ -38,10 +38,10 @@
     </section>
   @endif
   <h1>Menu</h1>
-  <div class='categories fluid-container'>
-    <div class='row'>
+  <div class='categories'>
+    <div>
       @foreach ($categories as $category)
-        <article class='category col-6 col-lg-4 col-xl-3'>
+        <article class='category'>
           <h2>{{$category->name}}</h2>
           <a href='categories/{{$category->id}}'><img src="{{$category->image_url}}"></a>
         </article>

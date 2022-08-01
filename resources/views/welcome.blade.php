@@ -48,7 +48,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/steak-1.jpg') }}'>
+                        <img src='{{ secure_asset('/img/steak-1.webp') }}'>
                         <div class='fav-content'>
                             <h4>Ribeye Steak</h4>
                             <p>Thick-cut steak topped with garlic butter.</p>
@@ -80,7 +80,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/steak-2.jpg') }}'>
+                        <img src='{{ secure_asset('/img/steak-2.webp') }}'>
                         <div class='fav-content'>
                             <h4>Sirloin Steak - 10oz</h4>
                             <p>Seasoned & topped with garlic butter.</p>
@@ -124,7 +124,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/steak-1.jpg') }}'>
+                        <img src='{{ secure_asset('/img/steak-1.webp') }}'>
                         <div class='fav-content'>
                             <h4>Ribeye Steak</h4>
                             <p>Thick-cut steak topped with garlic butter.</p>
@@ -156,7 +156,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/steak-2.jpg') }}'>
+                        <img src='{{ secure_asset('/img/steak-2.webp') }}'>
                         <div class='fav-content'>
                             <h4>Sirloin Steak - 10oz</h4>
                             <p>Seasoned & topped with garlic butter.</p>

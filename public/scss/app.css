@@ -1000,7 +1000,10 @@ table {
 
 #menu .fav-container {
   width: 90%;
-  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
 }
 
 #menu .fav-container .favorite {
@@ -1108,6 +1111,10 @@ table {
 }
 
 @media (max-width: 768px) {
+  #menu .fav-container {
+    -ms-grid-columns: 33.33% 33.33% 1fr;
+        grid-template-columns: 33.33% 33.33% 1fr;
+  }
   #menu .fav-container .favorite .item-title {
     height: 70px;
   }
@@ -1122,6 +1129,8 @@ table {
 
 @media (max-width: 576px) {
   #menu .fav-container {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
     padding: 5px;
   }
   #menu .fav-container .favorite {
@@ -1149,6 +1158,10 @@ table {
 }
 
 @media (max-width: 414px) {
+  #menu .fav-container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
   #menu .fav-container .favorite .add-info .description {
     font-size: 1rem;
   }

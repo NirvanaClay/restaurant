@@ -28,4 +28,11 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    ############################################
+    ## Prevent character encoding issues from server overrides
+    ## If you still have problems, use the second line instead
+
+    #AddDefaultCharset Off
+    AddDefaultCharset UTF-8
 </IfModule>

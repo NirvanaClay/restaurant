@@ -29,10 +29,9 @@ $light-grey: #bebebe;
       flex-direction: column;
       img{
         display: block;
-        width: 100%;
+        width: 200px;
+        max-width: 100%;
         height: auto;
-        // width: 200px;
-        // height: 200px;
         margin: 0 auto;
       }
       .item-title{

@@ -1021,7 +1021,8 @@ table {
 
 #menu .fav-container .favorite img {
   display: block;
-  width: 100%;
+  width: 200px;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
 }

@@ -32,7 +32,7 @@
             <div class='favs-container mt-4'>
                 <ul class='fav-slider'>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/burger-2.jpg') }}'> 
+                        <img src='{{ secure_asset('/img/burger-2.webp') }}'> 
                         <div class='fav-content'>              
                             <h4>Mushroom Swiss Burger</h4>
                             <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>
@@ -40,7 +40,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/pasta-1.jpg') }}'> 
+                        <img src='{{ secure_asset('/img/pasta-1.webp') }}'> 
                         <div class='fav-content'>
                             <h4>Chicken Alfredo</h4>
                             <p>Fettucini pasta covered in delicious alfredo sauce and sautéed shrimp.</p>
@@ -56,7 +56,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/appetizer-3.jpg') }}'>
+                        <img src='{{ secure_asset('/img/appetizer-3.webp') }}'>
                         <div class='fav-content'>              
                             <h4>Boneless Wings</h4>
                             <p>Bone out, taste in.</p>
@@ -64,7 +64,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/appetizer-1.jpg') }}'>
+                        <img src='{{ secure_asset('/img/appetizer-1.webp') }}'>
                         <div class='fav-content'>
                             <h4>Mozzarella Sticks</h4>
                             <p>Stuffed with cheese, served with marinara sauce.</p>
@@ -72,7 +72,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/pasta-5.jpg') }}'>
+                        <img src='{{ secure_asset('/img/pasta-5.webp') }}'>
                         <div class='fav-content'>
                             <h4>Cheese Ravioli</h4>
                             <p>Filled with a decadent blend of Italian cheeses, topped with your choice of marinara or a meat sauce, along with melted mozzarella.</p>
@@ -116,7 +116,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/pasta-1.jpg') }}'>
+                        <img src='{{ secure_asset('/img/pasta-1.webp') }}'>
                         <div class='fav-content'>
                             <h4>Chicken Alfredo</h4>
                             <p>Fettucini pasta covered in delicious alfredo sauce and sautéed shrimp.</p>
@@ -132,7 +132,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/appetizer-3.jpg') }}'>
+                        <img src='{{ secure_asset('/img/appetizer-3.webp') }}'>
                         <div class='fav-content'>              
                             <h4>Boneless Wings</h4>
                             <p>Bone out, taste in.</p>
@@ -140,7 +140,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/appetizer-1.jpg') }}'>
+                        <img src='{{ secure_asset('/img/appetizer-1.webp') }}'>
                         <div class='fav-content'>
                             <h4>Mozzarella Sticks</h4>
                             <p>Stuffed with cheese, served with marinara sauce.</p>
@@ -148,7 +148,7 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/pasta-5.jpg') }}'>
+                        <img src='{{ secure_asset('/img/pasta-5.webp') }}'>
                         <div class='fav-content'>
                             <h4>Cheese Ravioli</h4>
                             <p>Filled with a decadent blend of Italian cheeses, topped with your choice of marinara or a meat sauce, along with melted mozzarella.</p>

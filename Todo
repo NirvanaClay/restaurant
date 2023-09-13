@@ -1,0 +1,2 @@
+1. Conditionally render assets through 'asset()' or 'secure_asset()' depending on if in production. 
+2. Fix category menu layout.

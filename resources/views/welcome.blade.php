@@ -27,12 +27,16 @@
                 <div class='circle-3 mx-2'></div>
                 <div class='circle-4 mx-2'></div>
             </div>
-        @elseif(Auth::user() && count($user->favorites) == 0)
+        {{-- @elseif(Auth::user() && count($user->favorites) == 0)
             <h2>Guy's Favorites</h2>
             <div class='favs-container mt-4'>
                 <ul class='fav-slider'>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/burger-2.webp') }}'> 
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/burger-2.webp') }}'> 
+                        @else
+                            <img src='{{ secure_asset('/img/burger-2.webp') }}'>
+                        @endif
                         <div class='fav-content'>              
                             <h4>Mushroom Swiss Burger</h4>
                             <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>
@@ -40,7 +44,11 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/pasta-1.webp') }}'> 
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/pasta-1.webp') }}'> 
+                        @else
+                            <img src='{{ secure_asset('/img/pasta-1.webp') }}'>
+                        @endif                    
                         <div class='fav-content'>
                             <h4>Chicken Alfredo</h4>
                             <p>Fettucini pasta covered in delicious alfredo sauce and sautéed shrimp.</p>
@@ -48,7 +56,11 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/steak-1.webp') }}'>
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/steak-1.webp') }}'>
+                        @else
+                            <img src='{{ asset('/img/steak-1.webp') }}'>
+                        @endif                         
                         <div class='fav-content'>
                             <h4>Ribeye Steak</h4>
                             <p>Thick-cut steak topped with garlic butter.</p>
@@ -56,7 +68,11 @@
                         </div>
                     </li>
                     <li class='my-favs'>
+                    @if(App::environment('production'))
                         <img src='{{ secure_asset('/img/appetizer-3.webp') }}'>
+                    @else
+                        <img src='{{ asset('/img/appetizer-3.webp') }}'>
+                    @endif   
                         <div class='fav-content'>              
                             <h4>Boneless Wings</h4>
                             <p>Bone out, taste in.</p>
@@ -64,7 +80,11 @@
                         </div>
                     </li>
                     <li class='my-favs'>
+                    @if(App::environment('production'))
                         <img src='{{ secure_asset('/img/appetizer-1.webp') }}'>
+                    @else
+                        <img src='{{ asset('/img/appetizer-1.webp') }}'>
+                    @endif 
                         <div class='fav-content'>
                             <h4>Mozzarella Sticks</h4>
                             <p>Stuffed with cheese, served with marinara sauce.</p>
@@ -72,7 +92,11 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/pasta-5.webp') }}'>
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/pasta-5.webp') }}'>
+                        @else
+                            <img src='{{ asset('/img/pasta-5.webp') }}'>
+                        @endif 
                         <div class='fav-content'>
                             <h4>Cheese Ravioli</h4>
                             <p>Filled with a decadent blend of Italian cheeses, topped with your choice of marinara or a meat sauce, along with melted mozzarella.</p>
@@ -80,7 +104,11 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/steak-2.webp') }}'>
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/steak-2.webp') }}'>
+                        @else
+                            <img src='{{ asset('/img/steak-2.webp') }}'>
+                        @endif 
                         <div class='fav-content'>
                             <h4>Sirloin Steak - 10oz</h4>
                             <p>Seasoned & topped with garlic butter.</p>
@@ -94,13 +122,15 @@
                 <div class='circle-2 mx-2'></div>
                 <div class='circle-3 mx-2'></div>
                 <div class='circle-4 mx-2'></div>
-            </div>
+            </div> --}}
         @else
             <h2>Guy's Favorites</h2>
             <div class='favs-container mt-4'>
                 <ul class='fav-slider'>
                     <li class='user-favs'>
-                        <h3>View My Favorites</h3>
+                        @if(!Auth::user())
+                            <h3>View My Favorites</h3>
+                        @endif
                         <div class='fav-content'>
                             <h4>Log In</h4>
                             <p><a href='/login'>Log In</a> to your Rewards account to see your favorites.</p>
@@ -108,7 +138,95 @@
                         </div>
                     </li>
                     <li class='my-favs'>
-                        <img src='{{ secure_asset('/img/burger-2.png') }}'>
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/burger-2.webp') }}'> 
+                        @else
+                            <img src='{{ asset('/img/burger-2.webp') }}'>
+                        @endif
+                        <div class='fav-content'>              
+                            <h4>Mushroom Swiss Burger</h4>
+                            <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>
+                            <button>Add To Order</button>
+                        </div>
+                    </li>
+                    <li class='my-favs'>
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/pasta-1.webp') }}'> 
+                        @else
+                            <img src='{{ asset('/img/pasta-1.webp') }}'>
+                        @endif                    
+                        <div class='fav-content'>
+                            <h4>Chicken Alfredo</h4>
+                            <p>Fettucini pasta covered in delicious alfredo sauce and sautéed shrimp.</p>
+                            <button>Add To Order</button>
+                        </div>
+                    </li>
+                    <li class='my-favs'>
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/steak-1.webp') }}'>
+                        @else
+                            <img src='{{ asset('/img/steak-1.webp') }}'>
+                        @endif                         
+                        <div class='fav-content'>
+                            <h4>Ribeye Steak</h4>
+                            <p>Thick-cut steak topped with garlic butter.</p>
+                            <button>Add To Order</button>
+                        </div>
+                    </li>
+                    <li class='my-favs'>
+                    @if(App::environment('production'))
+                        <img src='{{ secure_asset('/img/appetizer-3.webp') }}'>
+                    @else
+                        <img src='{{ asset('/img/appetizer-3.webp') }}'>
+                    @endif   
+                        <div class='fav-content'>              
+                            <h4>Boneless Wings</h4>
+                            <p>Bone out, taste in.</p>
+                            <button>Add To Order</button>
+                        </div>
+                    </li>
+                    <li class='my-favs'>
+                    @if(App::environment('production'))
+                        <img src='{{ secure_asset('/img/appetizer-1.webp') }}'>
+                    @else
+                        <img src='{{ asset('/img/appetizer-1.webp') }}'>
+                    @endif 
+                        <div class='fav-content'>
+                            <h4>Mozzarella Sticks</h4>
+                            <p>Stuffed with cheese, served with marinara sauce.</p>
+                            <button>Add To Order</button>
+                        </div>
+                    </li>
+                    <li class='my-favs'>
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/pasta-5.webp') }}'>
+                        @else
+                            <img src='{{ asset('/img/pasta-5.webp') }}'>
+                        @endif 
+                        <div class='fav-content'>
+                            <h4>Cheese Ravioli</h4>
+                            <p>Filled with a decadent blend of Italian cheeses, topped with your choice of marinara or a meat sauce, along with melted mozzarella.</p>
+                            <button>Add To Order</button>
+                        </div>
+                    </li>
+                    <li class='my-favs'>
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/steak-2.webp') }}'>
+                        @else
+                            <img src='{{ asset('/img/steak-2.webp') }}'>
+                        @endif 
+                        <div class='fav-content'>
+                            <h4>Sirloin Steak - 10oz</h4>
+                            <p>Seasoned & topped with garlic butter.</p>
+                            <button>Add To Order</button>
+                        </div>
+                    </li>
+                    <li class='my-favs'>
+                        @if(App::environment('production'))
+                            <img src='{{ secure_asset('/img/burger-2.webp') }}'>
+                        @else
+                            <img src='{{ asset('/img/burger-2.webp') }}'>
+                        @endif 
                         <div class='fav-content'>              
                             <h4>Mushroom Swiss Burger</h4>
                             <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>

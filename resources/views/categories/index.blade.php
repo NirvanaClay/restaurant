@@ -39,14 +39,14 @@
   @endif
   <h1>Menu</h1>
   <div class='categories'>
-    <div>
+    {{-- <div> --}}
       @foreach ($categories as $category)
         <article class='category'>
           <h2>{{$category->name}}</h2>
           <a href='categories/{{$category->id}}'><img src="{{$category->image_url}}"></a>
         </article>
       @endforeach
-    </div>
+    {{-- </div> --}}
   </div>
 </section>
 

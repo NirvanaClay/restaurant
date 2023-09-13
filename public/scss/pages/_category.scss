@@ -28,35 +28,39 @@ $light-blue: #0971ce;
       margin: 25px 0;
       display: flex;
       flex-direction: column;
-      .item-title{
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        h2{
-          font-size: 1.5rem;
-          text-align: center;
-          font-weight: 700;
+      .item-text{
+        padding: 0 10px;
+        .item-title{
+          padding-top: 15px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h2{
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: 700;
+          }
         }
-      }
-      img{
-        display: block;
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-      }
-      .add-info{
-        height: 200px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        .description{
-          font-size: 1.2rem;
-          line-height: 1.2;
+        img{
+          display: block;
+          width: 80%;
+          height: auto;
+          margin: 0 auto;
         }
-        .price{
-          font-size: 1.4rem;
+        .add-info{
+          height: 200px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .description{
+            font-size: 1.2rem;
+            line-height: 1.2;
+          }
+          .price{
+            font-size: 1.4rem;
+          }
         }
       }
       .add-container{

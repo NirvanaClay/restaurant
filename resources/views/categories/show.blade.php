@@ -14,12 +14,14 @@
       @foreach ($items as $item)
         <article class='menu-item col-12 col-sm-6 col-md-4 col-lg-3'>
           <img src="{{$item->image_url}}">
-          <div class='item-title'>
-            <h2>{{$item->name}}</h2>
-          </div>
-          <div class='add-info'>
-            <p class='description'>{{$item->description}}</p>
-            <p class='price'>${{$item->price}}</p>
+          <div class='item-text'>
+            <div class='item-title'>
+              <h2>{{$item->name}}</h2>
+            </div>
+            <div class='add-info'>
+              <p class='description'>{{$item->description}}</p>
+              <p class='price'>${{$item->price}}</p>
+            </div>
           </div>
           <div class='add-container row'>
             @if(Auth::user())
@@ -37,7 +39,7 @@
                 </button>
               </form>
             @endif
-            <form method="POST" action="/items" class='addToCart col-10' name='cart-form'>
+            <form method="POST" action="/items" class='addToCart col-11' name='cart-form'>
               @csrf
               <input type ='hidden' name='name' value='{{$item->name}}' class='name'>
               <input type ='hidden' name='image_url' value='{{$item->image_url}}' class='image_url'>

@@ -113,6 +113,7 @@ $light-blue: #0971ce;
       position: relative;
       width: 80%;
       margin: 0 auto;
+      text-align: center;
       label{
         margin-left: 15px;
         text-align: left;
@@ -131,6 +132,7 @@ $light-blue: #0971ce;
         display: block;
         text-align: left;
         margin-left: 30px;
+        margin-bottom: 10px;
       }
       .row{
         display: flex;
@@ -182,6 +184,11 @@ $light-blue: #0971ce;
         form{
           width: 200px;
           margin: 0 auto;
+          .row{
+            label{
+              text-align: start;
+            }
+          }
           .form-group{
             width: 200px;
             input{
@@ -191,6 +198,32 @@ $light-blue: #0971ce;
             }
           }
         }
+      }
+    }
+  }
+  #register{
+    .register-main{
+      form{
+        label{
+          margin-left: 0;
+        }
+        .email-label{
+          margin-left: 15px;
+        }
+        .registered-q-container{
+          width: 100%;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 320px){
+  #register{
+    .register-main{
+      form{
+        width: 95%;
       }
     }
   }

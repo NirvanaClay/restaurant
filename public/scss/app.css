@@ -904,6 +904,7 @@ table {
   position: relative;
   width: 80%;
   margin: 0 auto;
+  text-align: center;
 }
 
 #register .register-main form label {
@@ -925,6 +926,7 @@ table {
   display: block;
   text-align: left;
   margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 #register .register-main form .row {
@@ -986,6 +988,9 @@ table {
     width: 200px;
     margin: 0 auto;
   }
+  .login-register .login-main .login-section form .row label {
+    text-align: start;
+  }
   .login-register .login-main .login-section form .form-group {
     width: 200px;
   }
@@ -993,6 +998,25 @@ table {
     height: 50px;
     width: 175px;
     padding: 0 10px;
+  }
+  #register .register-main form label {
+    margin-left: 0;
+  }
+  #register .register-main form .email-label {
+    margin-left: 15px;
+  }
+  #register .register-main form .registered-q-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  #register .register-main form {
+    width: 95%;
   }
 }
 

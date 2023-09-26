@@ -1,2 +1,4 @@
-1. Conditionally render assets through 'asset()' or 'secure_asset()' depending on if in production. 
-2. Fix category menu layout.
+1. Check performance using google.
+2. Reconsider styles for login page.
+3. Improve styles for register page. 
+4. Consider removing parent folder of this project, and making this folder the parent. 

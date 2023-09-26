@@ -10,7 +10,7 @@
     <p>Your food will be ready in 15-20 minutes, and your giftcard will be waiting for you.</p>
     @foreach($cartCards as $cartCard)
       <div class='final-giftcard'>
-        <img src='{{ secure_asset('img/giftcard.jpg') }}'>
+        <img src='{{ asset('img/giftcard.jpg') }}'>
         <h4>Card #: <?php echo wordwrap($cartCard['code'], 4, '-', true); ?></h4>
         <p>An email with your virtual giftcard, along with its code, will also be sent to you.</p>
       </div>
@@ -19,7 +19,7 @@
     <p>Come on down, your giftcard will be waiting for you at the restaurant.</p>
     @foreach($cartCards as $cartCard)
       <div class='final-giftcard'>
-        <img src='{{ secure_asset('img/giftcard.jpg') }}'>
+        <img src='{{ asset('img/giftcard.jpg') }}'>
         <h4>Card #: <?php echo wordwrap($cartCard['code'], 4, '-', true); ?></h4>
         <p>An email with your virtual giftcard, along with its code, will also be sent to you.</p>
       </div>

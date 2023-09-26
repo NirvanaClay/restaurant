@@ -103,7 +103,7 @@
     @for($i=0; $i < (count($giftcards) + 1); $i++)
       @if(isset($cartCards[$i]))
         <article class='giftcard'>
-          <img src='{{ secure_asset('img/giftcard.jpg') }}'>
+          <img src='{{ asset('img/giftcard.jpg') }}'>
           <div class='info'>
             <p>${{$cartCards[$i]['amount']}}</p>
             <form class='deleteCard' action='/giftcards/{{$cartCards[$i]['cardId']}}' method='POST'>
@@ -195,6 +195,6 @@
     </form>
   @endif
 </main>
-<script src="{{ secure_asset('js/order.js') }}"></script>
+<script src="{{ asset('js/order.js') }}"></script>
 
 @endsection

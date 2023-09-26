@@ -6,7 +6,8 @@ const circle4 = document.querySelector('.circle-4');
 
 const favs = document.querySelectorAll('.my-favs');
 
-const medium = window.matchMedia('(max-width: 768px)');
+// const medium = window.matchMedia('(max-width: 768px)');
+const medium = window.matchMedia('(max-width: 1024px)');
 const small = window.matchMedia('(max-width: 576px)');
 const xSmall = window.matchMedia('(max-width: 320px)');
 

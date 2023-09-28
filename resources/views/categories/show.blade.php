@@ -23,7 +23,7 @@
               <p class='price'>${{$item->price}}</p>
             </div>
           </div>
-          <div class='add-container row'>
+          <div class='add-container'>
             @if(Auth::user())
               <form method="POST" action="/favorites" class='addFav col-2' name='fav-form'>
                 @csrf

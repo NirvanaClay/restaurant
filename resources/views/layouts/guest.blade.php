@@ -24,7 +24,7 @@
             {{ $slot }}
         </div>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="{{ asset('js/scripts.js') }}"></script>
+        {{-- <script src="{{ asset('js/scripts.js') }}"></script> --}}
         <script src="{{ asset('js/giftcards.js') }}"></script>
         <script src="{{ asset('js/cart.js') }}"></script>
         <script src="{{ asset('js/favorites.js') }}"></script>

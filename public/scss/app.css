@@ -785,6 +785,7 @@ table {
 }
 
 .login-register h2 {
+  width: 50%;
   margin: 0 auto;
   text-align: center;
   font-size: 1.5rem;
@@ -793,7 +794,8 @@ table {
 }
 
 .login-register .login-main {
-  margin-top: 20px;
+  width: 50%;
+  margin: 20px auto 0 auto !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -983,6 +985,15 @@ table {
   }
 }
 
+@media (max-width: 1024px) {
+  .login-register h2 {
+    width: 80%;
+  }
+  .login-register .login-main {
+    width: 80%;
+  }
+}
+
 @media (max-width: 576px) {
   .login-register .login-main .login-section form {
     width: 200px;
@@ -1132,6 +1143,26 @@ table {
   color: black;
 }
 
+#menu .fav-container .favorite .remove {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+  background: #ff0000;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#menu .fav-container .favorite .remove:hover {
+  background: #0971ce;
+  color: black;
+}
+
 #menu .categories {
   width: 90%;
   margin: 0 auto;
@@ -1185,7 +1216,7 @@ table {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   #menu .fav-container {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
@@ -1205,11 +1236,12 @@ table {
   #menu .fav-container .favorite .add-info .description {
     font-size: 1.1rem;
   }
+}
+
+@media (max-width: 576px) {
   #menu .categories {
     width: 100%;
     padding: 0;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
   }
   #menu .categories .category img {
     width: 90%;
@@ -1218,10 +1250,6 @@ table {
 }
 
 @media (max-width: 414px) {
-  #menu .fav-container {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
   #menu .fav-container .favorite .add-info .description {
     font-size: 1rem;
   }
@@ -1869,16 +1897,17 @@ table {
 }
 
 #dashboard .fav-container {
-  width: 100%;
+  width: 90%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
+  margin: 0 auto;
 }
 
 #dashboard .fav-container .favorite {
   width: 90%;
-  margin: 25px auto;
+  margin: 25px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1888,8 +1917,16 @@ table {
           flex-direction: column;
 }
 
+#dashboard .fav-container .favorite img {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 #dashboard .fav-container .favorite .item-title {
-  height: 60px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1899,19 +1936,14 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
+  padding-top: 5px;
 }
 
 #dashboard .fav-container .favorite .item-title h3 {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 700;
-}
-
-#dashboard .fav-container .favorite img {
-  display: block;
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
 }
 
 #dashboard .fav-container .favorite .add-info {
@@ -1923,10 +1955,9 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 15px;
 }
 
 #dashboard .fav-container .favorite .add-info .description {
@@ -1938,10 +1969,10 @@ table {
   font-size: 1.4rem;
 }
 
-#dashboard .fav-container .favorite .btn-container .order {
+#dashboard .fav-container .favorite .order {
   display: block;
   margin: 0 auto;
-  width: 100%;
+  width: 95%;
   height: 50px;
   border: 0;
   border-radius: 5px;
@@ -1953,15 +1984,15 @@ table {
   transition: .2s ease-in-out;
 }
 
-#dashboard .fav-container .favorite .btn-container .order:hover {
+#dashboard .fav-container .favorite .order:hover {
   background: #0971ce;
   color: black;
 }
 
-#dashboard .fav-container .favorite .btn-container .remove {
+#dashboard .fav-container .favorite .remove {
   display: block;
   margin: 0 auto;
-  width: 100%;
+  width: 95%;
   height: 50px;
   border: 0;
   border-radius: 5px;
@@ -1973,7 +2004,7 @@ table {
   transition: .2s ease-in-out;
 }
 
-#dashboard .fav-container .favorite .btn-container .remove:hover {
+#dashboard .fav-container .favorite .remove:hover {
   background: #0971ce;
   color: black;
 }

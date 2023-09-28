@@ -1,6 +1,6 @@
 <x-guest-layout>
     <div class='login-register fluid-container'>
-        <h2 class='col-12 col-md-6'>If you are a Guy's Rewards member, log in now! If not, join now for great deals, starting with your first purchase!</h2>
+        <h2>If you are a Guy's Rewards member, log in now! If not, join now for great deals, starting with your first purchase!</h2>
         <div class='login-main row my-5 mx-3'>
             <section class='login-section col-12 col-md-6'>
                 <x-auth-card>

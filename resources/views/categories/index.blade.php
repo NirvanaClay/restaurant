@@ -22,16 +22,25 @@
               <p class='description'>{{$favorite->description}}</p>
               <p class='price'>${{$favorite->price}}</p>
             </div>
-            <form method="POST" action="/items" class='addToCart' name='cart-form'>
-              @csrf
-              <input type ='hidden' name='name' value='{{$favorite->name}}' class='name'>
-              <input type ='hidden' name='image_url' value='{{$favorite->image_url}}' class='image_url'>
-              <input type ='hidden' name='description' value='{{$favorite->description}}' class='description'>
-              <input type ='hidden' name='price' value='{{$favorite->price}}' class='price'>
-              <input type ='hidden' name='category' value='{{$favorite->category}}' class='category'>
-              <input type ='hidden' name='id' value='{{$favorite->fav_id}}' class='id'>
-              <input type='submit' class='order' name='order' value='Add To Cart'>
-            </form>
+            <div class='btn-container'>
+              <form method="POST" action="/items" class='addToCart' name='cart-form'>
+                @csrf
+                <input type ='hidden' name='name' value='{{$favorite->name}}' class='name'>
+                <input type ='hidden' name='image_url' value='{{$favorite->image_url}}' class='image_url'>
+                <input type ='hidden' name='description' value='{{$favorite->description}}' class='description'>
+                <input type ='hidden' name='price' value='{{$favorite->price}}' class='price'>
+                <input type ='hidden' name='category' value='{{$favorite->category}}' class='category'>
+                <input type ='hidden' name='id' value='{{$favorite->fav_id}}' class='id'>
+                <input type='submit' class='order' name='order' value='Add To Cart'>
+              </form>
+              <form class='deleteFavs' action='/favorites/{{$favorite->id}}' method='POST'>
+                @csrf
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <input type ='hidden' name='id' value='{{$favorite->id}}' class='id'>
+                <input type='submit' class='remove mt-2' value="Remove Favorite">
+              </form>
+            </div>
           </article>
         @endforeach
       </div>

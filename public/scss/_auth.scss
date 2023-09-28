@@ -24,6 +24,7 @@ $light-blue: #0971ce;
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
   h2{
+    width: 50%;
     margin: 0 auto;
     text-align: center;
     font-size: 1.5rem;
@@ -31,7 +32,8 @@ $light-blue: #0971ce;
     margin-top: 0;
   }
   .login-main{
-    margin-top: 20px;
+    width: 50%;
+    margin: 20px auto 0 auto !important;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -174,6 +176,17 @@ $light-blue: #0971ce;
 @media (min-width: 720px){
   #register{
     padding: 30px 50px;
+  }
+}
+
+@media(max-width: 1024px){
+  .login-register{
+    h2{
+      width: 80%;
+    }
+    .login-main{
+      width: 80%;
+    }
   }
 }
 

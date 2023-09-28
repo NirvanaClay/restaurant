@@ -44,7 +44,7 @@
                   <input type="hidden" name="_method" value="DELETE">
                   <input type="hidden" name="_token" value="{{ csrf_token() }}">
                   <input type ='hidden' name='id' value='{{$favorite->id}}' class='id'>
-                  <input type='submit' class='remove mt-2' value="Remove">
+                  <input type='submit' class='remove mt-2' value="Remove Favorite">
               </form>
             </div>
           </article>

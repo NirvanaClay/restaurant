@@ -123,11 +123,12 @@ $light-blue: #0971ce;
       }
       input{
         margin: 0 auto;
+        padding: 0 5px;
         border: 1px solid grey;
         display: block;
         width: 95%;
-        // width: 80%;
         height: 50px;
+        font-size: 1.2rem;
         background: white !important;
       }
       .email-label{

@@ -1,4 +1,4 @@
-Display of favorites in mobile.
-Add padding to register inputs.
+Increase % width for mobile login section and decrease % width for header at top of page.
+'Join Now' in login/register page has blue text on iOS.
 Consider removing parent folder of this project, and making this folder the parent. 
 Check performance using google.

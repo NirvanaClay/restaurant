@@ -2017,16 +2017,6 @@ table {
   color: black;
 }
 
-@media (max-width: 992px) {
-  #dashboard {
-    padding-bottom: 30px;
-  }
-  #dashboard .fav-container {
-    -ms-grid-columns: 33.33% 33.33% 1fr;
-        grid-template-columns: 33.33% 33.33% 1fr;
-  }
-}
-
 @media (max-width: 767px) {
   #dashboard .rewards__container {
     display: -webkit-box;
@@ -2061,6 +2051,10 @@ table {
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+  }
+  #dashboard .fav-container .favorite .add-info {
+    height: 225px;
+    padding: 0 5px;
   }
   #dashboard .fav-container .favorite .btn-container {
     display: -webkit-box;
@@ -2105,6 +2099,9 @@ table {
 }
 
 @media (max-width: 414px) {
+  #dashboard .fav-container .favorite .add-info .description {
+    font-size: 1.1rem;
+  }
   #dashboard .fav-container .favorite .order {
     font-size: 1.1rem;
   }

@@ -1,7 +1,4 @@
 Increase % width for mobile login section and decrease % width for header at top of page.
 'Join Now' in login/register page has blue text on iOS.
 Increase width of login section on mobile.
-Decrease width of 'favorite' buttons on mobile.
-Not enough vertical space for some descriptions in dashboard favorites on mobile.
-Excessive vertical space in menu favorites on mobile. Maybe increase text size.
 Check performance using google.

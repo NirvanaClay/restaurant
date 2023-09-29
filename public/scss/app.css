@@ -814,6 +814,9 @@ table {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .login-register .login-main .login-section h3 {
@@ -998,18 +1001,18 @@ table {
 
 @media (max-width: 576px) {
   .login-register .login-main .login-section form {
-    width: 200px;
+    width: 250px;
     margin: 0 auto;
   }
   .login-register .login-main .login-section form .row label {
     text-align: start;
   }
   .login-register .login-main .login-section form .form-group {
-    width: 200px;
+    width: 250px;
   }
   .login-register .login-main .login-section form .form-group input {
     height: 50px;
-    width: 175px;
+    width: 250px;
     padding: 0 10px;
   }
   #register .register-main form label {

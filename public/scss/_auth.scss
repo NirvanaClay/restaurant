@@ -41,6 +41,7 @@ $light-blue: #0971ce;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      align-items: center;
       h3{
         font-size: 2rem;
         font-weight: 700;
@@ -196,7 +197,7 @@ $light-blue: #0971ce;
     .login-main{
       .login-section{
         form{
-          width: 200px;
+          width: 250px;
           margin: 0 auto;
           .row{
             label{
@@ -204,10 +205,11 @@ $light-blue: #0971ce;
             }
           }
           .form-group{
-            width: 200px;
+            width: 250px;
             input{
               height: 50px;
-              width: 175px;
+              // width: 175px;
+              width: 250px;
               padding: 0 10px;
             }
           }

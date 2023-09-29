@@ -202,8 +202,14 @@ $light-grey: #bebebe;
       .favorite{
         .add-info{
           .description{
-            font-size: 1rem;
+            font-size: 1.1rem;
           }
+        }
+        .order{
+          font-size: 1.1rem;
+        }
+        .remove{
+          font-size: 1.1rem;
         }
       }
     }

@@ -222,6 +222,21 @@ $light-blue: #0971ce;
   }
 }
 
+@media(max-width: 414px){
+  #dashboard{
+    .fav-container{
+      .favorite{
+        .order{
+          font-size: 1.1rem;
+        }
+        .remove{
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
 @media(max-width: 320px){
   #dashboard{
     .rewards__container{

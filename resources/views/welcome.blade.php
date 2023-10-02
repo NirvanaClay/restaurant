@@ -59,6 +59,7 @@
                         <div class='fav-content'>              
                             <h4>Mushroom Swiss Burger</h4>
                             <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>
+                            <button>Add To Order</button>
                             {{-- <form method="POST" action="/items" class='addToCart col-11' name='cart-form'>
                                 @csrf
                                 <input type ='hidden' name='name' value='Mushroom Swiss Burger' class='name'>
@@ -80,6 +81,7 @@
                         <div class='fav-content'>
                             <h4>Chicken Alfredo</h4>
                             <p>Fettucini pasta covered in delicious alfredo sauce and sautéed shrimp.</p>
+                            <button>Add To Order</button>
                             {{-- <form method="POST" action="/items" class='addToCart col-11' name='cart-form'>
                                 @csrf
                                 <input type ='hidden' name='name' value='{{$favorite->name}}' class='name'>
@@ -113,6 +115,7 @@
                         <div class='fav-content'>              
                             <h4>Boneless Wings</h4>
                             <p>Bone out, taste in.</p>
+                            <button>Add To Order</button>
                             {{-- <form method="POST" action="/items" class='addToCart col-11' name='cart-form'>
                                 @csrf
                                 <input type ='hidden' name='name' value='{{$favorite->name}}' class='name'>

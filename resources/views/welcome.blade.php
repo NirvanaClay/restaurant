@@ -59,16 +59,16 @@
                         <div class='fav-content'>              
                             <h4>Mushroom Swiss Burger</h4>
                             <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>
-                            <form method="POST" action="/items" class='addToCart col-11' name='cart-form'>
+                            {{-- <form method="POST" action="/items" class='addToCart col-11' name='cart-form'>
                                 @csrf
-                                <input type ='hidden' name='name' value='{{$favorite->name}}' class='name'>
-                                <input type ='hidden' name='image_url' value='{{$favorite->image_url}}' class='image_url'>
+                                <input type ='hidden' name='name' value='Mushroom Swiss Burger' class='name'>
+                                <input type ='hidden' name='image_url' value=`{{asset('/img/burger-2.webp')}}` class='image_url'>
                                 <input type ='hidden' name='description' value='{{$favorite->description}}' class='description'>
                                 <input type ='hidden' name='price' value='{{$favorite->price}}' class='price'>
                                 <input type ='hidden' name='category' value='{{$favorite->category->name}}' class='category'>
                                 <input type ='hidden' name='id' value='{{$favorite->id}}' class='id'>
                                 <input type='submit' class='order' name='order' value='Add To Cart'>
-                            </form>
+                            </form> --}}
                         </div>
                     </li>
                     <li class='my-favs'>
@@ -80,7 +80,7 @@
                         <div class='fav-content'>
                             <h4>Chicken Alfredo</h4>
                             <p>Fettucini pasta covered in delicious alfredo sauce and sautéed shrimp.</p>
-                            <form method="POST" action="/items" class='addToCart col-11' name='cart-form'>
+                            {{-- <form method="POST" action="/items" class='addToCart col-11' name='cart-form'>
                                 @csrf
                                 <input type ='hidden' name='name' value='{{$favorite->name}}' class='name'>
                                 <input type ='hidden' name='image_url' value='{{$favorite->image_url}}' class='image_url'>
@@ -89,7 +89,7 @@
                                 <input type ='hidden' name='category' value='{{$favorite->category->name}}' class='category'>
                                 <input type ='hidden' name='id' value='{{$favorite->id}}' class='id'>
                                 <input type='submit' class='order' name='order' value='Add To Cart'>
-                            </form>
+                            </form> --}}
                         </div>
                     </li>
                     <li class='my-favs'>
@@ -113,7 +113,16 @@
                         <div class='fav-content'>              
                             <h4>Boneless Wings</h4>
                             <p>Bone out, taste in.</p>
-                            <button>Add To Order</button>
+                            {{-- <form method="POST" action="/items" class='addToCart col-11' name='cart-form'>
+                                @csrf
+                                <input type ='hidden' name='name' value='{{$favorite->name}}' class='name'>
+                                <input type ='hidden' name='image_url' value='{{$favorite->image_url}}' class='image_url'>
+                                <input type ='hidden' name='description' value='{{$favorite->description}}' class='description'>
+                                <input type ='hidden' name='price' value='{{$favorite->price}}' class='price'>
+                                <input type ='hidden' name='category' value='{{$favorite->category->name}}' class='category'>
+                                <input type ='hidden' name='id' value='{{$favorite->id}}' class='id'>
+                                <input type='submit' class='order' name='order' value='Add To Cart'>
+                            </form> --}}
                         </div>
                     </li>
                     <li class='my-favs'>

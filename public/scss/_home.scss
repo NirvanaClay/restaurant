@@ -321,7 +321,8 @@ $light-grey: #bebebe;
             .fav-content{
               width: 150px;
               height: 350px;
-              button{
+              button, order{
+                font-size: 1.1rem;
                 width: 100px;
               }
             }

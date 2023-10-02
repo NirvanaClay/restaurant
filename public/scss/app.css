@@ -409,7 +409,8 @@ table {
     height: 350px;
   }
 
-  #landing .landing-favorites .favs-container .fav-slider .user-favs .fav-content button {
+  #landing .landing-favorites .favs-container .fav-slider .user-favs .fav-content button, #landing .landing-favorites .favs-container .fav-slider .user-favs .fav-content order {
+    font-size: 1.1rem;
     width: 100px;
   }
 

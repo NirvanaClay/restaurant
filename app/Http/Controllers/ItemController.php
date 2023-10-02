@@ -90,16 +90,6 @@ class ItemController extends Controller
      */
     public function order(Request $request)
     {
-        // $giftcards = Giftcard::all();
-        // foreach($giftcards as $giftcard){
-        //     $giftcard->delete();
-        // }
-        // Schema::table('items', function (Blueprint $table) {
-        //     $table->text('description')->nullable()->change();
-        // });
-        // Schema::table('favorites', function (Blueprint $table) {
-        //     $table->text('category');
-        // });
         $items = Item::all();
         $highestItem = 0;
         foreach($items as $item){
@@ -125,11 +115,6 @@ class ItemController extends Controller
             $user->save();
         }
         $drinks = [];
-        // $user->moneySpent = 0;
-        // $user->save();
-        // Session::flush();
-        // return view('pages/order', ['cartItems' => $cartItems, 'cartCards' => $cartCards, 'totalNum' => $totalNum, 'all' => $all,
-        // 'giftcards' => $giftcards]);
         return view('pages/order', ['all' => $all, 'user' => $user, 'rewardMoney' => $rewardMoney, 
         'eachReward' => $eachReward, 'drinks' => $drinks, 'items' => $items]);
     }
@@ -169,9 +154,9 @@ class ItemController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        //
+    public function genericFavorites()
+    {   
+        $genericFavoriteIds = [7, 10, 20, 3, 1, 15, 21];
     }
 
     /**

@@ -1224,6 +1224,7 @@ table {
   }
   #menu .categories .category .category-name h2 {
     height: 100%;
+    font-size: 1.5rem;
   }
   #menu .categories .category img {
     width: 90%;

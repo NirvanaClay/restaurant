@@ -51,7 +51,9 @@
     {{-- <div> --}}
       @foreach ($categories as $category)
         <article class='category'>
-          <h2>{{$category->name}}</h2>
+          <div class='category-name'>
+            <h2>{{$category->name}}</h2>
+          </div>
           <a href='categories/{{$category->id}}'><img src="{{$category->image_url}}"></a>
         </article>
       @endforeach

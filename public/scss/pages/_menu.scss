@@ -104,10 +104,12 @@ $light-grey: #bebebe;
     grid-template-columns: 25% 25% 25% 25%;
     .category{
       margin: 25px 0;
-      h2{
-        font-size: 2rem;
-        margin-bottom: 10px;
-        text-align: center;
+      .category-name{
+        h2{
+          font-size: 2rem;
+          margin-bottom: 10px;
+          text-align: center;
+        }
       }
       img{
         display: block;
@@ -186,8 +188,14 @@ $light-grey: #bebebe;
       width: 100%;
       padding: 0;
       .category{
-        h2{
-          height: 50px;
+        .category-name{
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h2{
+            height: 100%;
+          }
         }
         img{
           width: 90%;

@@ -108,46 +108,6 @@ $light-grey: #bebebe;
             a{
               text-decoration: none;
             }
-            button, .order{
-              height: 40px;
-              width: 150px;
-              display: block;
-              margin: 0 auto;
-              border: none;
-              border-radius: 5px;
-              background: $red;
-              font-size: 1.2rem;
-              font-weight: 600
-            }
-          }
-        }
-        .my-favs{
-          height: 500px;
-          width: 225px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          cursor: pointer;
-          font-size: 1rem;
-          border: 1px solid $light-grey;
-          img{
-            width: 225px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-          }
-          .fav-content{
-            height: 275px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 20px 10px;
-            h4{
-              font-size: 1.5rem;
-            }
-            p{
-              font-size: 1.2rem;
-            }
             button{
               height: 40px;
               width: 150px;
@@ -158,6 +118,21 @@ $light-grey: #bebebe;
               background: $red;
               font-size: 1.2rem;
               font-weight: 600;
+            }
+            form{
+              display: flex;
+              .order{
+                height: 40px;
+                width: 150px;
+                display: block;
+                margin: 0 auto;
+                border: none;
+                border-radius: 5px;
+                background: $red;
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 600;
+              }
             }
           }
         }

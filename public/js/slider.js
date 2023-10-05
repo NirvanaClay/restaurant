@@ -4,7 +4,7 @@ const circle2 = document.querySelector('.circle-2');
 const circle3 = document.querySelector('.circle-3');
 const circle4 = document.querySelector('.circle-4');
 
-const favs = document.querySelectorAll('.my-favs');
+const favs = document.querySelectorAll('.user-favs');
 
 // const medium = window.matchMedia('(max-width: 768px)');
 const medium = window.matchMedia('(max-width: 1024px)');

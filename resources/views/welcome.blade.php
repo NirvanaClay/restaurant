@@ -50,11 +50,40 @@
                             <a href='{{ route('dashboard') }}'><button>Log In</button></a>
                         </div>
                     </li>
+                    @foreach($defaultFavs as $defaultFav)
                     <li class='user-favs'>
+                        <img src='{{ $defaultFav['image_url'] }}'> 
+                        <div class='fav-content'>              
+                            <h4>{{ $defaultFav['name'] }}</h4>
+                            <p>{{ $defaultFav['description'] }}</p>
+                            <form method="POST" action="/items" class='addToCart' name='cart-form'>
+                                @csrf
+                                <input type ='hidden' name='name' value='{{ $defaultFav['name'] }}' class='name'>
+                                <input type ='hidden' name='image_url' value='{{ $defaultFav['image_url'] }}' class='image_url'>
+                                <input type ='hidden' name='description' value='{{ $defaultFav['description'] }}' class='description'>
+                                <input type ='hidden' name='price' value='{{ $defaultFav['price'] }}' class='price'>
+                                <input type ='hidden' name='category' value='{{ $defaultFav['category_id'] }}' class='category'>
+                                <input type ='hidden' name='id' value='{{ $defaultFav['id'] }}' class='id'>
+                                <input type='submit' class='order' name='order' value='Add To Cart'>
+                            </form>
+                        </div>
+                    </li>
+                    @endforeach
+                    {{-- <li class='user-favs'>
                         <img src='{{ asset('/img/burger-2.webp') }}'>
                         <div class='fav-content'>              
                             <h4>Mushroom Swiss Burger</h4>
                             <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>
+                            <form method="POST" action="/items" class='addToCart' name='cart-form'>
+                                @csrf
+                                <input type ='hidden' name='name' value='Mushroom Swiss Burger' class='name'>
+                                <input type ='hidden' name='image_url' value='/img/burger-2.webp' class='image_url'>
+                                <input type ='hidden' name='description' value='Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.' class='description'>
+                                <input type ='hidden' name='price' value=10.49 class='price'>
+                                <input type ='hidden' name='category_id' value=2 class='category'>
+                                <input type ='hidden' name='id' value=7 class='id'>
+                                <input type='submit' class='order' name='order' value='Add To Cart'>
+                            </form>
                             <button>Add To Order</button>
                         </div>
                     </li>
@@ -161,7 +190,7 @@
                             <p>Seasoned & topped with garlic butter.</p>
                             <button>Add To Order</button>
                         </div>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
             <div class='nav-circles'>

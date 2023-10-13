@@ -9,12 +9,12 @@ use App\Models\Item;
 use App\Models\User;
 use App\Models\Giftcard;
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Session;
-
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Password;
 
 use Illuminate\Http\Request;
 
@@ -32,11 +32,71 @@ use Illuminate\Http\Request;
 Route::redirect('/public', '/');
 Route::redirect('http://www.restaurant18.herokuapp.com', 'https://www.restaurant18.herokuapp.com');
 
+// Auth::routes();
+
 Route::get('/', function (Request $request) {
+    $defaultFavs = [
+        [
+            'name' => 'Mushroom Swiss Burger',
+            'image_url' => '/img/burger-2.webp',
+            'description' => 'Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.',
+            'price' => 10.49,
+            'category_id' => 2,
+            'id' => 7,
+        ],
+        [
+            'name' => 'Chicken Alfredo',
+            'image_url' => '/img/pasta-1.webp',
+            'description' => 'Fettucini pasta covered in delicious alfredo sauce and sliced grilled chicken.',
+            'price' => 13.99,
+            'category_id' => 3,
+            'id' => 10,
+        ],
+        [
+            'name' => 'Ribeye Steak',
+            'image_url' => '/img/steak-1.webp',
+            'description' => 'Thick-cut steak topped with garlic butter.',
+            'price' => 17.99,
+            'category_id' => 4,
+            'id' => 20,
+        ],
+        [
+            'name' => 'Boneless Wings',
+            'image_url' => '/img/appetizer-3.webp',
+            'description' => 'Bone out, taste in.',
+            'price' => 10.39,
+            'category_id' => 1,
+            'id' => 3,
+        ],
+        [
+            'name' => 'Mozzarella Sticks',
+            'image_url' => '/img/appetizer-1.webp',
+            'description' => 'Stuffed with cheese, served with marinara sauce.',
+            'price' => 7.49,
+            'category_id' => 1,
+            'id' => 1,
+        ],
+        [
+            'name' => 'Cheese Ravioli',
+            'image_url' => '/img/pasta-5.webp',
+            'description' => 'Filled with a decadent blend of Italian cheeses, topped with your choice of marinara or a meat sauce, along with melted mozzarella.',
+            'price' => 11.49,
+            'category_id' => 3,
+            'id' => 15,
+        ],
+        [
+            'name' => '10oz Sirloin Steak',
+            'image_url' => '/img/steak-2.webp',
+            'description' => 'A succulent 10oz sirloin steak seasoned and grilled to perfection.',
+            'price' => 15.99,
+            'category_id' => 4,
+            'id' => 25,
+        ]
+        ];
     $categories = Category::all();
     $id = Auth::id();
     $user = User::find($id);
-    return view('welcome', ['categories' => $categories, 'user' => $user]);
+    return view('welcome', ['categories' => $categories, 'user' => $user, 'defaultFavs' => $defaultFavs]);
 })->name('home');
 
 Route::get('/categories', function(Request $request) {

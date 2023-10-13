@@ -50,10 +50,17 @@
                     </div>
 
                     <div class="registered-q-container flex items-center justify-end my-4">
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900 registered-q" href="{{ route('login') }}">
+                        {{-- <a class="underline text-sm text-gray-600 hover:text-gray-900 registered-q" href="{{ route('login') }}">
                             {{ __('Already registered? Log in.') }}
-                        </a>
-
+                        </a> --}}
+                        <div class='registered-q-element'>
+                            <p class="underline text-sm text-gray-600 registered-q">
+                                {{ __('Already registered?') }}
+                            </p>
+                            <a class="underline text-sm text-gray-600 hover:text-gray-900 registered-q" href="{{ route('login') }}">
+                                {{ __('Log in.') }}
+                            </a>
+                        </div>
                         <x-button class="register-button mt-3">
                             {{ __('Register') }}
                         </x-button>

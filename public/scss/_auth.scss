@@ -71,8 +71,9 @@ $light-blue: #0971ce;
       flex-direction: column;
       justify-content: space-between;
       h2{
+        width: 75%;
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: 700;
         color: $red;
       }
       p{
@@ -87,7 +88,6 @@ $light-blue: #0971ce;
         font-size: 1.4rem;
         font-weight: 500;
         color: white;
-        // text-transform: uppercase;
         cursor: pointer;
       }
     }
@@ -115,7 +115,7 @@ $light-blue: #0971ce;
       --tw-bg-opacity: 1;
       background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
       position: relative;
-      width: 80%;
+      width: 60%;
       margin: 0 auto;
       text-align: center;
       label{
@@ -129,8 +129,8 @@ $light-blue: #0971ce;
         border: 1px solid grey;
         display: block;
         width: 95%;
-        height: 50px;
-        font-size: 1.2rem;
+        height: 40px;
+        font-size: 1.1rem;
         background: white !important;
       }
       .email-label{
@@ -151,17 +151,18 @@ $light-blue: #0971ce;
         }
         input{
           width: 45%;
-          height: 50px;
+          height: 40px;
         }
       }
       .registered-q-container{
-        width: 50%;
+        width: 75%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .registered-q{
-          font-size: 1.3rem;
+          display: block;
+          font-size: 1.2rem;
         }
         button{
           width: 200px;
@@ -175,6 +176,81 @@ $light-blue: #0971ce;
     }
   }
 }
+
+.forgot-password {
+  min-height: 100vh;
+  padding-top: 30px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $red;
+    text-align: center;
+  }
+
+  .text-sm.text-gray-600 {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  form {
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+
+    label {
+      // margin-left: 15px;
+      text-align: center;
+      font-size: 1.2rem;
+      display: block;
+    }
+
+    input {
+      margin: 0 auto;
+      padding: 0 5px;
+      border: 1px solid grey;
+      display: block;
+      width: 40%;
+      height: 40px;
+      font-size: 1.1rem;
+      background: white !important;
+    }
+
+    .flex.items-center.justify-end {
+      width: 75%;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center; // centered because there's only one button
+
+      button {
+        width: 160px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        background: $red;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+        // width: 200px;
+        // height: 60px;
+        // font-size: 1.4rem;
+        // background: $red;
+        // border: none;
+        // border-radius: 5px;
+      }
+    }
+  }
+}
+
 
 @media (min-width: 720px){
   #register{

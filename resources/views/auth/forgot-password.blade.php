@@ -32,5 +32,7 @@
             </form>
         </x-auth-card>
     </div>
-
+    <div class="font-medium items-center text-sm text-green-600 mb-4">
+        We have emailed your password reset link!
+    </div>
 </x-guest-layout>

@@ -31,7 +31,7 @@
     'name' => 'Cheese Ravioli',
     'image_url' => '/img/pasta-5.jpg',
     'category_id' => '$category->id,',
-    'description' => 'Filled with a decadent blend of Italian cheeses, topped with your choice of marinara or a meat sauce, along with melted mozzarella.',
+    'description' => 'Filled with a decadent blend of Italian cheeses, topped with your choice of marinara or a meat sauce.',
     'price' => '11.49'
   }
 ]

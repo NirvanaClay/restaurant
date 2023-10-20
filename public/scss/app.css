@@ -1061,18 +1061,18 @@ table {
   background: white !important;
 }
 
-@media (min-width: 720px) {
-  #register {
-    padding: 30px 50px;
+@media (max-width: 1024px) {
+  .login-register .login-main {
+    width: 80%;
+  }
+  .login-register .login-main .register-section h2 {
+    width: 80%;
   }
 }
 
-@media (max-width: 1024px) {
-  .login-register h2 {
-    width: 80%;
-  }
-  .login-register .login-main {
-    width: 80%;
+@media (min-width: 720px) {
+  #register {
+    padding: 30px 50px;
   }
 }
 
@@ -1108,6 +1108,12 @@ table {
 }
 
 @media (max-width: 320px) {
+  .login-register h2 {
+    width: 100%;
+  }
+  .login-register .login-main .register-section {
+    height: 225px;
+  }
   #register .register-main form {
     width: 95%;
   }

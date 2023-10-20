@@ -147,18 +147,6 @@ $light-grey: #bebebe;
   }
 }
 
-@media(max-width: 992px){
-  #menu{
-    .fav-container{
-      .favorite{
-        .add-info{
-          // height: 175px;
-        }
-      }
-    }
-  }
-}
-
 @media(max-width: 767px){
   #menu{
     .fav-container{

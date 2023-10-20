@@ -286,21 +286,22 @@ $light-blue: #0971ce;
   }
 }
 
+@media(max-width: 1024px){
+  .login-register{
+    .login-main{
+      width: 80%;
+      .register-section{
+        h2{
+          width: 80%;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 720px){
   #register{
     padding: 30px 50px;
-  }
-}
-
-@media(max-width: 1024px){
-  .login-register{
-    h2{
-      width: 80%;
-    }
-    .login-main{
-      width: 80%;
-    }
   }
 }
 
@@ -348,6 +349,16 @@ $light-blue: #0971ce;
 }
 
 @media(max-width: 320px){
+  .login-register{
+    h2{
+      width: 100%;
+    }
+    .login-main{
+      .register-section{
+        height: 225px;
+      }
+    }
+  } 
   #register{
     .register-main{
       form{

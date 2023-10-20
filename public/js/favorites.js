@@ -1,3 +1,18 @@
+function showAddedFavoritePopup(favItem) {
+  let popup = document.createElement('div');
+  popup.classList.add('favorite-popup');
+  popup.innerText = 'Favorite added';
+  let container = favItem.closest('.add-container');
+  container.appendChild(popup);
+
+  setTimeout(function() {
+      popup.style.opacity = '0';
+      setTimeout(function() {
+          container.removeChild(popup);
+      }, 1000);
+  }, 3000);
+}
+
 //Add Favorites
 const addFavs = document.querySelectorAll('.addFav');
 
@@ -13,7 +28,8 @@ for(addFav of addFavs){
       fav_id: this.fav_id.value,
       user_id: this.user_id.value
       })
-      .then(function (response) {
+      .then((response) => {
+        showAddedFavoritePopup(this);
         console.log(this);
       })
       .catch(function (error) {

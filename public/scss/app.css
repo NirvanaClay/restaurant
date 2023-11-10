@@ -957,7 +957,7 @@ table {
 
 .forgot-password h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #ff0000;
   text-align: center;
@@ -967,7 +967,7 @@ table {
   width: 60%;
   margin: 20px auto;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .forgot-password form {
@@ -1013,7 +1013,7 @@ table {
   border: none;
   border-radius: 5px;
   background: #ff0000;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: white;
   cursor: pointer;
@@ -1059,6 +1059,28 @@ table {
   height: 40px;
   font-size: 1.1rem;
   background: white !important;
+}
+
+.reset-password form button {
+  width: 160px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background: #ff0000;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
 @media (max-width: 1024px) {

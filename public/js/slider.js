@@ -29,29 +29,24 @@ function checkScreenSize(){
       left='-600px';
       circle4.style.display = 'none';
       if(favs.length <=6){
-        console.log('4-6 items');
         circle3.style.display = 'none';
       }
       else if(favs.length <=3){
-        console.log('4-6 items');
         circle2.style.display = 'none';
       }
     } 
     else if(small.matches && !xSmall.matches){
       left='-300px';
       if(favs.length <=2){
-        console.log('0-2 items');
         circle2.style.display = 'none';
         circle3.style.display = 'none';
         circle4.style.display = 'none';
       } 
       else if(favs.length <=4){
-        console.log('3-4 items');
         circle3.style.display = 'none';
         circle4.style.display = 'none';
       } 
       else if(favs.length <=6){
-        console.log('5-6 items');
         circle4.style.display = 'none';
       }
     } 

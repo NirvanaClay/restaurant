@@ -30,10 +30,9 @@ for(addFav of addFavs){
       })
       .then((response) => {
         showAddedFavoritePopup(this);
-        console.log(this);
       })
       .catch(function (error) {
-        console.log(error);
+        console.error(error);
       });
   })
 }
@@ -52,7 +51,7 @@ for(deleteFav of deleteFavs){
         grandparent.remove();
       })
       .catch(function (error) {
-        console.log(error);
+        console.error(error);
       });
   })
 }

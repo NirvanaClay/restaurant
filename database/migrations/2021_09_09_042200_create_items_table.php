@@ -19,7 +19,6 @@ class CreateItemsTable extends Migration
             $table->text('image_url');
             $table->text('description')->nullable();
             $table->decimal('price', 4, 2);
-            $table->integer('quantity');
             $table->integer('category_id');
         });
     }

@@ -35,7 +35,7 @@ Route::redirect('http://www.restaurant18.herokuapp.com', 'https://www.restaurant
 // Auth::routes();
 
 Route::get('/', function (Request $request) {
-    $defaultFavIds = [7, 10, 20, 3, 1, 15, 25];
+    $defaultFavIds = [30, 13, 20, 3, 1, 15, 25];
     $defaultFavs = Item::whereIn('id', $defaultFavIds)->get();
     $categories = Category::all();
     $id = Auth::id();

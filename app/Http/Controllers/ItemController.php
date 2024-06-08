@@ -114,9 +114,21 @@ class ItemController extends Controller
             $user->moneySpent = $leftOver;
             $user->save();
         }
+        // $cartItems = Session::get('cartItems', []);
+    
+        // // Sort the cart items by price in descending order
+        // usort($cartItems, function ($a, $b) {
+        //     return $b['price'] - $a['price'];
+        // });
         $drinks = [];
-        return view('pages/order', ['all' => $all, 'user' => $user, 'rewardMoney' => $rewardMoney, 
-        'eachReward' => $eachReward, 'drinks' => $drinks, 'items' => $items]);
+        return view('pages/order', [
+            'all' => $all, 
+            'user' => $user, 
+            'rewardMoney' => $rewardMoney, 
+            'eachReward' => $eachReward, 
+            'drinks' => $drinks, 
+            'items' => $items,
+        ]);
     }
 
     /**

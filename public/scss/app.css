@@ -1473,12 +1473,13 @@ table {
 
 #order .item {
   height: 225px;
-  width: 90%;
-  padding: 0 5%;
+  width: 80%;
+  padding: 0 5% 20px 5%;
   margin: 50px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 2px solid black;
 }
 
 #order .item .big-img {
@@ -2262,8 +2263,5 @@ table {
 #app-layout button {
   color: white;
 }
-
-
-
 
 

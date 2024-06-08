@@ -41,9 +41,10 @@
             <div class='favs-container mt-4'>
                 <ul class='fav-slider'>
                     <li class='user-favs'>
-                        @if(!Auth::user())
+                        {{-- @if(Auth::user()) --}}
+                        {{-- @if(!Auth::user()) --}}
                             <h3>View My Favorites</h3>
-                        @endif
+                        {{-- @endif --}}
                         <div class='fav-content'>
                             <h4>Log In</h4>
                             <p><a href='/login'>Log In</a> to your Rewards account to see your favorites.</p>
@@ -69,128 +70,6 @@
                         </div>
                     </li>
                     @endforeach
-                    {{-- <li class='user-favs'>
-                        <img src='{{ asset('/img/burger-2.webp') }}'>
-                        <div class='fav-content'>              
-                            <h4>Mushroom Swiss Burger</h4>
-                            <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>
-                            <form method="POST" action="/items" class='addToCart' name='cart-form'>
-                                @csrf
-                                <input type ='hidden' name='name' value='Mushroom Swiss Burger' class='name'>
-                                <input type ='hidden' name='image_url' value='/img/burger-2.webp' class='image_url'>
-                                <input type ='hidden' name='description' value='Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.' class='description'>
-                                <input type ='hidden' name='price' value=10.49 class='price'>
-                                <input type ='hidden' name='category_id' value=2 class='category'>
-                                <input type ='hidden' name='id' value=7 class='id'>
-                                <input type='submit' class='order' name='order' value='Add To Cart'>
-                            </form>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/pasta-1.webp') }}'>                  
-                        <div class='fav-content'>
-                            <h4>Chicken Alfredo</h4>
-                            <p>Fettucini pasta covered in delicious alfredo sauce and sautéed shrimp.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/steak-1.webp') }}'>                 
-                        <div class='fav-content'>
-                            <h4>Ribeye Steak</h4>
-                            <p>Thick-cut steak topped with garlic butter.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/appetizer-3.webp') }}'>
-                        <div class='fav-content'>              
-                            <h4>Boneless Wings</h4>
-                            <p>Bone out, taste in.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/appetizer-1.webp') }}'>
-                        <div class='fav-content'>
-                            <h4>Mozzarella Sticks</h4>
-                            <p>Stuffed with cheese, served with marinara sauce.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/pasta-5.webp') }}'>
-                        <div class='fav-content'>
-                            <h4>Cheese Ravioli</h4>
-                            <p>Filled with a decadent blend of Italian cheeses, topped with your choice of marinara or a meat sauce, along with melted mozzarella.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/steak-2.webp') }}'> 
-                        <div class='fav-content'>
-                            <h4>Sirloin Steak - 10oz</h4>
-                            <p>Seasoned & topped with garlic butter.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/burger-2.webp') }}'>
-                        <div class='fav-content'>              
-                            <h4>Mushroom Swiss Burger</h4>
-                            <p>Pure beef topped off with mushrooms, sauteed onions, Swiss cheese, lettuce, tomato, and garlic aioli.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/pasta-1.webp') }}'>
-                        <div class='fav-content'>
-                            <h4>Chicken Alfredo</h4>
-                            <p>Fettucini pasta covered in delicious alfredo sauce and sautéed shrimp.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/steak-1.webp') }}'>
-                        <div class='fav-content'>
-                            <h4>Ribeye Steak</h4>
-                            <p>Thick-cut steak topped with garlic butter.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/appetizer-3.webp') }}'>
-                        <div class='fav-content'>              
-                            <h4>Boneless Wings</h4>
-                            <p>Bone out, taste in.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/appetizer-1.webp') }}'>
-                        <div class='fav-content'>
-                            <h4>Mozzarella Sticks</h4>
-                            <p>Stuffed with cheese, served with marinara sauce.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/pasta-5.webp') }}'>
-                        <div class='fav-content'>
-                            <h4>Cheese Ravioli</h4>
-                            <p>Filled with a decadent blend of Italian cheeses, topped with your choice of marinara or a meat sauce, along with melted mozzarella.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li>
-                    <li class='user-favs'>
-                        <img src='{{ asset('/img/steak-2.webp') }}'>
-                        <div class='fav-content'>
-                            <h4>Sirloin Steak - 10oz</h4>
-                            <p>Seasoned & topped with garlic butter.</p>
-                            <button>Add To Order</button>
-                        </div>
-                    </li> --}}
                 </ul>
             </div>
             <div class='nav-circles'>

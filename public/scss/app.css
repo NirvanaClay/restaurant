@@ -1315,10 +1315,6 @@ table {
   #menu .fav-container .favorite .add-info {
     height: 175px;
   }
-  #menu .fav-container .favorite .order:hover {
-    background: #ff0000;
-    color: white;
-  }
   #menu .categories {
     -ms-grid-columns: 33.33% 33.33% 1fr;
         grid-template-columns: 33.33% 33.33% 1fr;
@@ -2161,6 +2157,25 @@ table {
   color: black;
 }
 
+@media (max-width: 1024px) {
+  #dashboard .fav-container {
+    -ms-grid-columns: 33.33% 33.33% 1fr;
+        grid-template-columns: 33.33% 33.33% 1fr;
+  }
+  #dashboard .fav-container .favorite .item-title {
+    height: 70px;
+  }
+  #dashboard .fav-container .favorite .add-info {
+    height: 175px;
+  }
+  #dashboard .fav-container .favorite .order {
+    font-size: 1.1rem;
+  }
+  #dashboard .fav-container .favorite .remove {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 767px) {
   #dashboard .rewards__container {
     display: -webkit-box;
@@ -2191,10 +2206,9 @@ table {
     font-size: 1.3rem;
   }
   #dashboard .fav-container {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+    padding: 5px;
   }
   #dashboard .fav-container .favorite .add-info {
     height: 225px;

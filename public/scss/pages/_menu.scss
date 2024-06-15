@@ -121,7 +121,6 @@ $light-grey: #bebebe;
   }
 }
 
-// @media(max-width: 768px){
 @media(max-width: 1024px){
   #menu{
     .fav-container{
@@ -132,12 +131,6 @@ $light-grey: #bebebe;
         }
         .add-info{
           height: 175px;
-        }
-        .order{
-          &:hover{
-            background: $red;
-            color: white;
-          }
         }
       }
     }

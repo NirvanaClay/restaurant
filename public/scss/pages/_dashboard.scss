@@ -151,6 +151,28 @@ $light-blue: #0971ce;
 //   }
 // }
 
+@media(max-width: 1024px){
+  #dashboard{
+    .fav-container{
+      grid-template-columns: 33.33% 33.33% 1fr;
+      .favorite{
+        .item-title{
+          height: 70px;
+        }
+        .add-info{
+          height: 175px;
+        }
+        .order{
+          font-size: 1.1rem;
+        }
+        .remove{
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
 @media(max-width: 767px){
   #dashboard{
     .rewards__container{
@@ -179,8 +201,8 @@ $light-blue: #0971ce;
       }
     }
     .fav-container{
-      display: grid;
       grid-template-columns: 50% 50%;
+      padding: 5px;
       .favorite{
         .add-info{
           height: 225px;

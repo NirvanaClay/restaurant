@@ -2210,6 +2210,9 @@ table {
         grid-template-columns: 50% 50%;
     padding: 5px;
   }
+  #dashboard .fav-container .favorite {
+    width: 95%;
+  }
   #dashboard .fav-container .favorite .add-info {
     height: 225px;
     padding: 0 5px;

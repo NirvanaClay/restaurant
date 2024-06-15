@@ -41,15 +41,21 @@
             <div class='favs-container mt-4'>
                 <ul class='fav-slider'>
                     <li class='user-favs'>
-                        {{-- @if(Auth::user()) --}}
-                        {{-- @if(!Auth::user()) --}}
-                            <h3>View My Favorites</h3>
-                        {{-- @endif --}}
-                        <div class='fav-content'>
-                            <h4>Log In</h4>
-                            <p><a href='/login'>Log In</a> to your Rewards account to see your favorites.</p>
-                            <a href='{{ route('dashboard') }}'><button>Log In</button></a>
-                        </div>
+                        @if(Auth::user())
+                            <h3>Add Favorites</h3>
+                            <div class='fav-content'>
+                                <h4>View Menu</h4>
+                                <p><a href='/categories'>View Menu</a> to start adding favorites for easy ordering.</p>
+                                <a href='/categories'><button>Menu</button></a>
+                            </div>
+                        @else
+                            <h3>Add Favorites</h3>
+                            <div class='fav-content'>
+                                <h4>Log In</h4>
+                                <p><a href='/login'>Log In</a> to your Rewards account to see your favorites.</p>
+                                <a href='{{ route('dashboard') }}'><button>Log In</button></a>
+                            </div>
+                        @endif
                     </li>
                     @foreach($defaultFavs as $defaultFav)
                     <li class='user-favs'>

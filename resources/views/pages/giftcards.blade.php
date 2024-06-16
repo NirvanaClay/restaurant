@@ -18,7 +18,7 @@
         <input type='hidden' name='hiddenAmount' class='hiddenGcAmt' value='$50'>
         <div class='custom-amount'>
           <p>Other amount:</p>
-          <input type='number' name='amount' placeholder='$10 - $100 in increments of $1' class='buyCard-amount' min="10" max="100">
+          <input type='number' name='amount' placeholder='$10 - $100 in $1 increments' class='buyCard-amount' min="10" max="100">
         </div>
       </form>
     </div>

@@ -69,6 +69,7 @@ $light-grey: #bebebe;
           display: block;
           margin: 10px auto;
           padding: 0 5px;
+          text-align: center;
           border: 1px solid $light-grey;
           font-size: 1.2rem;
           input::-webkit-outer-spin-button,
@@ -114,6 +115,7 @@ $light-grey: #bebebe;
         .custom-amount{
           input[type='number']{
             width: 200px;
+            font-size: 1rem;
           }
         }
       }
